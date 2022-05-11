@@ -1,0 +1,148 @@
+-------------------PLANS----------------------
+
+INITIAL GOAL: Ant is trying to get home. Use arrow keys lead the ant back
+to the anthill. Avoid dangerous terrain. MAYBE collect food scraps?
+OR: Ant must collect food and THEN return home. 
+
+TERRAIN TYPES: 
+•Water?
+•Spider webs?
+•Could have something crazy like fire or acid
+
+QUESTIONS:
+-Should ant have a scope of vision? So maybe the ant-hill is invisible
+until ant is closer?
+-Time limit?
+-WHAT IS GAME NAME??
+
+---------------------HTML---------------------------
+[] h1 title or header
+[] Play button
+[] Pause button
+[] Quit button
+
+------------------LATER HTML-----------------
+[] Main Menu button
+[] Instructions button
+
+---------------------CSS--------------------------
+
+
+
+------------------JAVASCRIPT----------------------
+[] Play Button
+    -When player presses play, the game will start
+[] Pause Button 
+    -When player presses pause, the game will pause
+    -Then the pause button will turn into play button 
+    -Might be later function though
+[] Quit Button
+    -When player presses quit, the game will end
+[] Move Player Ant 
+    -Player Ant must be able to move with the arrow keys
+    -If player is not moving, then ant will be still
+    -If player moves, ant will show the appropriate walking gif
+[] Enter Anthill
+    -When Player Ant touches the anthill, they enter it and win the game
+[] Collect Food
+    -When Player Ant walks over a scrap of food, they collect it. 
+    -Food will appear in inventory? Or food will appear on ants back?
+    -Food will appear in inventory FIRST. If you get the normal stuff
+    working, then maybe it can appear on the ant's back. Not priority yet. 
+[] Die 
+    -If Player Ant touches dangerous terrain, they die. 
+    -Show Game Over screen
+    -Show option to play again or quit
+
+---------------------LATER JAVASCRIPT----------------
+[] Enemy Movement
+    -Depends on the enemy, refer to other notes for now
+[] Enemy Shadows
+    -Enemy shadows will appear over the ant, and ant must avoid
+[] Main Menu button 
+[] Instructions button 
+
+-------------------ART/GRAPHICS----------------------
+[] Player Ant
+    [] Left movement gif
+    [] Right movement gif
+    [] Up/down movement gif?
+[] Ant hill
+[] Background
+[] Objects
+[] Terrain 
+[] Food scraps
+
+--------------------LATER GOALS---------------------------------
+•Ant could start at the anthill, go out to collect food, and THEN return.
+•Enemies! 
+    -Shadow of a bird appears, and there's a time limit where ant needs to find
+    cover before the bird gets them.
+    -Spider on a web? Ant needs to avoid the spider webs. Avoid spider shadows.
+    -Beetles or other bugs are walking around and have the red eye vision code
+    where ant needs to avoid getting hit with the red cone because that means 
+    ant is caught.
+    -Fire ants? Enemy ants?
+•Ant could have levels inside a house and need to avoid people and ant traps.
+•Menu screen? Instruction tab? 
+•Ant gifs for walking animation
+•Lives 
+    -The user could have a row of ants walking together. When an enemy eats an ant,
+    or the leading ant falls into dangerous terrain, then the leader dies, and the
+    next ant must lead. So the ants are like "lives."
+•Two ant or ant groups at once?
+    -Could allow for a second player to use the same keyboard or let the initial
+    -have an extra challenge. One ant group is controlled with WASD and the other
+    -ant group is controlled with the arrow keys. 
+
+------------------GRADE REQUIREMENTS------------------
+[] Must run in web browser
+[] Minimum of 10 commits
+[] Multiple commits per day
+[] This game can be designed for 2 or more players (PvP) or 1 player (PvE)
+    -The second player in a PvP game can be a person or an AI
+    -For multi-player games, turns should switch appropriately between players 
+[] This game should be winnable or it should keep score (whichever makes more sense)
+[] When a player wins or loses, the game status and/or score should display 
+    visually to the player in a way that does not rely on console.logs or alerts
+[X] HTML, CSS, and JavaScript should live in separate files
+[] Effort must be spent on styling and appearance
+[] The HTML code should use sematic tags 
+    - https://www.w3schools.com/html/html5_semantic_elements.asp
+[X] The game should have a Readme.md file in the GitHub repository 
+    [] that describes the inspiration for the game, 
+    [] explains the controls and how to play the game, 
+    [] lists the technologies used to build the game, 
+    [] and addresses any outstanding bugs or unfinished functionality
+
+BONUS IDEAS
+[] Make persistent scores in your browser's localStorage
+[] Add interesting music or sound effects to your game
+
+DELIVERABLES
+[] A link to your game, which is deployed somewhere on the internet
+[] A link to your GitHub repository, so we can see the progress on your game
+
+----------------------GRADING SCALE----------------------------
+User Experience
+-Was effort put into styling? 
+-Is this a fun game to play? 
+-Are the controls intuitive?
+
+Functionality
+-Is the game playable? 
+-Do all features work? 
+-Is there a win/lose/score condition?
+
+Workflow
+-Did you use GitHub properly? 
+-Is there a readme?
+
+Code Style
+-Does the code follow best practices/naming conventions? 
+-Is it DRY?
+
+Presentation
+-Did the student present the project to the class? 
+-Is the site deployed where others can access?
+
