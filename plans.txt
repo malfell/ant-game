@@ -73,6 +73,11 @@ until ant is closer?
 [] Terrain 
 [] Food scraps
 
+Ant Resources
+Walking Cycle side view:
+https://www.youtube.com/watch?v=TiO7CZRghSc
+Walking cycle top view: 
+http://img0.joyreactor.com/pics/post/how-ant-walk-gif-1181931.gif
 --------------------LATER GOALS---------------------------------
 •Ant could start at the anthill, go out to collect food, and THEN return.
 •Enemies! 
