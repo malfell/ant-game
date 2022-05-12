@@ -1,0 +1,17 @@
+function startGame(){
+    // gameWindow.start();
+    const pc = newPlayableCharacter(100, 100);
+}
+
+// let gameWindow = {
+//     canvas: document.getElementById('game-window'),
+//     start: function(){
+//         // the getContext('2d) object has properties and methods for
+//         //drawing on the canvas. Helpful for games.
+//         this.context = this.canvas.getContext('2d');
+//     }
+// }
+
+// taken from web-game activity
+//Collects URL of image, creates img, makes src the url,
+//positions image as absolute, and appends it the body

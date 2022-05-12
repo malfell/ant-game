@@ -1,3 +1,18 @@
 * {
     background-color: beige;
 }
+
+/* Window where game will be played */
+#game-window {
+    width: 40em;
+    height: 30em;
+    border-width: .2em;
+    border-style: solid;
+    /* margin: auto; */
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

@@ -1,8 +1,7 @@
 -------------------PLANS----------------------
 
-INITIAL GOAL: Ant is trying to get home. Use arrow keys lead the ant back
-to the anthill. Avoid dangerous terrain. MAYBE collect food scraps?
-OR: Ant must collect food and THEN return home. 
+INITIAL GOAL: Ant must collect food for the colony. Use arrow keys lead ant to the food,
+and return home to the anthill. Avoid dangerous terrain. 
 
 TERRAIN TYPES: 
 •Water?
@@ -14,6 +13,8 @@ QUESTIONS:
 until ant is closer?
 -Time limit?
 -WHAT IS GAME NAME??
+    Ant Quest?
+    
 
 ---------------------HTML---------------------------
 [] h1 title or header
@@ -38,10 +39,18 @@ until ant is closer?
     -Might be later function though
 [] Quit Button
     -When player presses quit, the game will end
+[]Place Items
+    -Player Ant
+    -Background
+    -Objects
+    -Food
+    -Anthill
+    -Enemies
 [] Move Player Ant 
     -Player Ant must be able to move with the arrow keys
     -If player is not moving, then ant will be still
     -If player moves, ant will show the appropriate walking gif
+    diagonal keys: https://www.w3schools.com/graphics/game_controllers.asp
 [] Enter Anthill
     -When Player Ant touches the anthill, they enter it and win the game
 [] Collect Food
@@ -53,6 +62,11 @@ until ant is closer?
     -If Player Ant touches dangerous terrain, they die. 
     -Show Game Over screen
     -Show option to play again or quit
+    https://blog.logrocket.com/build-a-game-with-html-css-javascript/
+[]Collision Detection
+    -if enterAnthill
+    -if collectFood
+    -if die
 
 ---------------------LATER JAVASCRIPT----------------
 [] Enemy Movement
