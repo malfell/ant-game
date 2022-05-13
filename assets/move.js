@@ -106,7 +106,7 @@ function move(element) {
 }
 
 // ///////////////////
-const character = newImage('imgs/game-imgs/ANTS/ant-static-south.png')
+const character = newImage('assets/imgs/game-imgs/ANTS/ant-static-south.png')
 
 //changes character appearance based on direction. 
 //Direction parameter needed to connect scope to move function
@@ -117,40 +117,40 @@ function handleDirectionChange(direction){
     //     character.src = 'imgs/game-imgs/ANTS/ant-static-south.png'
     // }
     if(direction === 'west'){
-        character.src = 'imgs/game-imgs/ANTS/ant-walk-west.gif'
+        character.src = 'assets/imgs/game-imgs/ANTS/ant-walk-west.gif'
         // When key stops being pressed, the ant image will become
         //the static version of the gif.
         //Current issue is that if there's a quick click, there
         //won't be animation. Ant will just slide.
         document.addEventListener('keyup', function(){
-            character.src = 'imgs/game-imgs/ANTS/ant-static-west.png'
+            character.src = 'assets/imgs/game-imgs/ANTS/ant-static-west.png'
         })
     }
     if(direction === 'north'){
-        character.src = 'imgs/game-imgs/ANTS/ant-walk-north.gif'
+        character.src = 'assets/imgs/game-imgs/ANTS/ant-walk-north.gif'
         document.addEventListener('keyup', function(){
-            character.src = 'imgs/game-imgs/ANTS/ant-static-north.png'
+            character.src = 'assets/imgs/game-imgs/ANTS/ant-static-north.png'
         })
     }
 
     //DIAGONAL NOT WORKING. COME BACK TO THIS. 
     if(direction === 'northWest'){
-        character.src = 'imgs/game-imgs/ANTS/ant-walk-north-west.gif'
+        character.src = 'assets/imgs/game-imgs/ANTS/ant-walk-north-west.gif'
         document.addEventListener('keyup', function(){
-            character.src = 'imgs/game-imgs/ANTS/ant-static-north-west.png'
+            character.src = 'assets/imgs/game-imgs/ANTS/ant-static-north-west.png'
         })
     }
 
     if(direction === 'east'){
-        character.src = 'imgs/game-imgs/ANTS/ant-walk-east.gif'
+        character.src = 'assets/imgs/game-imgs/ANTS/ant-walk-east.gif'
         document.addEventListener('keyup', function(){
-            character.src = 'imgs/game-imgs/ANTS/ant-static-east.png'
+            character.src = 'assets/imgs/game-imgs/ANTS/ant-static-east.png'
         })
     }
     if(direction === 'south'){
-        character.src = 'imgs/game-imgs/ANTS/ant-walk-south.gif'
+        character.src = 'assets/imgs/game-imgs/ANTS/ant-walk-south.gif'
         document.addEventListener('keyup', function(){
-            character.src = 'imgs/game-imgs/ANTS/ant-static-south.png'
+            character.src = 'assets/imgs/game-imgs/ANTS/ant-static-south.png'
         })
     }
 }
@@ -159,4 +159,4 @@ function handleDirectionChange(direction){
 move(character).withArrowKeys(100, 250, handleDirectionChange)
 
 //added ant hill
-move(newImage('imgs/game-imgs/anthill-sprite.png')).to(500, 350)
+move(newImage('assets/imgs/game-imgs/anthill-sprite.png')).to(500, 350)
