@@ -1,6 +1,5 @@
-// Movement functions taken from JS-Webgame-Activity
-// Will need reworking! Need to have ant static in multiple positions!
-//Or maybe there's a way to freeze the gif when not moving?
+// General functions taken from JS-Webgame-Activity
+
 function move(element) {
     element.style.position = 'fixed' //fixes the position of image
 
@@ -22,20 +21,26 @@ function move(element) {
         // Function to move the element
         //Define directions
         function moveCharacter(){
+            //Slowed movement speed. "1" felt a little fast
+            //and hard to see the ant.
             if(direction === 'west'){
-                x-=1
+                x-=.7
             }
 
             if(direction === 'north'){
-                y+=1
+                y+=.7
+            }
+            if(direction === 'northWest'){ //COME BACK TO THIS. DIAGONAL NOT WORKING
+                y+=.7
+                x-=.7
             }
 
             if(direction === 'east'){
-                x+=1
+                x+=.7
             }
 
             if(direction === 'south'){
-                y-=1
+                y-=.7
             }
             element.style.left = x + 'px'
             element.style.bottom = y + 'px'
@@ -43,9 +48,15 @@ function move(element) {
         //calls move function every millisecond
         setInterval(moveCharacter, 1)
 
+        //This object catches multiple key presses to allow
+        //for diagonal movement 
+        //NOT WORKING. COME BACK TO THIS. 
+        let keysPressed = {}
         // Click arrow keys for movement! "e" needed for checking
         //which key was pressed. When keys are pressed, element moves.
         document.addEventListener('keydown', function(e){
+            //DIAGONAL NOT WORKING! COME BACK TO THIS!
+            keysPressed[e.key] = true;
             //let user hold down key to keep movement happening
             if(e.repeat) return;
             //match directions with appropriate arrowkeys
@@ -55,12 +66,19 @@ function move(element) {
             if(e.key === 'ArrowUp'){
                 direction = 'north'
             }
+
+            //DIAGONAL NOT WORKING. COME BACK THIS!!!
+            if(e.key === 'ArrowUp' && e.key === 'ArrowLeft'){
+                direction = 'northWest'
+            }
+
             if(e.key === 'ArrowRight'){
                 direction = 'east'
             }
             if(e.key === 'ArrowDown'){
                 direction = 'south'
             }
+            
             callback(direction)
         })
 
@@ -70,6 +88,12 @@ function move(element) {
             direction = null
             callback(direction)
         })
+
+        //DIAGONAL STUFF NOT WORKING??
+        // https://www.gavsblog.com/blog/detect-single-and-multiple-keypress-events-javascript
+        document.addEventListener('keyup', (e) => {
+            delete keysPressed[e.key];
+         });
     }
 
     return {
@@ -108,6 +132,15 @@ function handleDirectionChange(direction){
             character.src = 'imgs/game-imgs/ANTS/ant-static-north.png'
         })
     }
+
+    //DIAGONAL NOT WORKING. COME BACK TO THIS. 
+    if(direction === 'northWest'){
+        character.src = 'imgs/game-imgs/ANTS/ant-walk-north-west.gif'
+        document.addEventListener('keyup', function(){
+            character.src = 'imgs/game-imgs/ANTS/ant-static-north-west.png'
+        })
+    }
+
     if(direction === 'east'){
         character.src = 'imgs/game-imgs/ANTS/ant-walk-east.gif'
         document.addEventListener('keyup', function(){
@@ -124,3 +157,6 @@ function handleDirectionChange(direction){
 
 
 move(character).withArrowKeys(100, 250, handleDirectionChange)
+
+//added ant hill
+move(newImage('imgs/game-imgs/anthill-sprite.png')).to(500, 350)

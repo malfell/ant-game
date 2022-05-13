@@ -1,4 +1,4 @@
-console.log('test')
+
 
 
 //Creates a new image based on URL. This will be used to

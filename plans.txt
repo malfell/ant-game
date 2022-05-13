@@ -46,11 +46,11 @@ until ant is closer?
     -Food
     -Anthill
     -Enemies
-[] Move Player Ant 
+[X] Move Player Ant 
     -Player Ant must be able to move with the arrow keys
     -If player is not moving, then ant will be still
     -If player moves, ant will show the appropriate walking gif
-    diagonal keys: https://www.w3schools.com/graphics/game_controllers.asp
+    [] diagonal keys: https://www.w3schools.com/graphics/game_controllers.asp
 [] Enter Anthill
     -When Player Ant touches the anthill, they enter it and win the game
 [] Collect Food
