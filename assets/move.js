@@ -1,26 +1,13 @@
-function startGame(){
-    // gameWindow.start();
-    const pc = newPlayableCharacter(100, 100);
-}
-
-// let gameWindow = {
-//     canvas: document.getElementById('game-window'),
-//     start: function(){
-//         // the getContext('2d) object has properties and methods for
-//         //drawing on the canvas. Helpful for games.
-//         this.context = this.canvas.getContext('2d');
-//     }
-// }
-
-// taken from web-game activity
-//Collects URL of image, creates img, makes src the url,
-//positions image as absolute, and appends it the body
-
+// Movement functions taken from JS-Webgame-Activity
+// Will need reworking! Need to have ant static in multiple positions!
+//Or maybe there's a way to freeze the gif when not moving?
 function move(element) {
-    element.style.position = 'fixed'
+    element.style.position = 'fixed' //fixes the position of image
 
     function moveToCoordinates(left, bottom) {
+        //Moves image specified number of pixels from left of screen
         element.style.left = left + 'px'
+        //Moves image specified number of pixels from bottom of screen
         element.style.bottom = bottom + 'px'
     }
 
@@ -33,6 +20,7 @@ function move(element) {
         element.style.bottom = y + 'px'
 
         // Function to move the element
+        //Define directions
         function moveCharacter(){
             if(direction === 'west'){
                 x-=1
@@ -60,7 +48,7 @@ function move(element) {
         document.addEventListener('keydown', function(e){
             //let user hold down key to keep movement happening
             if(e.repeat) return;
-
+            //match directions with appropriate arrowkeys
             if(e.key === 'ArrowLeft'){
                 direction = 'west'
             }
@@ -85,11 +73,15 @@ function move(element) {
     }
 
     return {
+        //Defines "to" as a property of moveToCoords allowing it to be 
+        //accessible outside of the move function
+        //Can be called as move(newImage(url).to(left, bottom))
         to: moveToCoordinates,
         withArrowKeys: moveWithArrowKeys
     }
 }
 
+// ///////////////////
 const character = newImage('imgs/game-imgs/ANTS/ant-static-south.png')
 
 //changes character appearance based on direction. 
@@ -97,49 +89,38 @@ const character = newImage('imgs/game-imgs/ANTS/ant-static-south.png')
 //in move.js
 function handleDirectionChange(direction){
     //null for no chosen direction
-    if(direction === null){
-        character.src = 'imgs/game-imgs/ANTS/ant-static-south.png'
-    }
+    // if(direction === null){
+    //     character.src = 'imgs/game-imgs/ANTS/ant-static-south.png'
+    // }
     if(direction === 'west'){
         character.src = 'imgs/game-imgs/ANTS/ant-walk-west.gif'
+        // When key stops being pressed, the ant image will become
+        //the static version of the gif.
+        //Current issue is that if there's a quick click, there
+        //won't be animation. Ant will just slide.
+        document.addEventListener('keyup', function(){
+            character.src = 'imgs/game-imgs/ANTS/ant-static-west.png'
+        })
     }
     if(direction === 'north'){
         character.src = 'imgs/game-imgs/ANTS/ant-walk-north.gif'
+        document.addEventListener('keyup', function(){
+            character.src = 'imgs/game-imgs/ANTS/ant-static-north.png'
+        })
     }
     if(direction === 'east'){
         character.src = 'imgs/game-imgs/ANTS/ant-walk-east.gif'
+        document.addEventListener('keyup', function(){
+            character.src = 'imgs/game-imgs/ANTS/ant-static-east.png'
+        })
     }
     if(direction === 'south'){
         character.src = 'imgs/game-imgs/ANTS/ant-walk-south.gif'
+        document.addEventListener('keyup', function(){
+            character.src = 'imgs/game-imgs/ANTS/ant-static-south.png'
+        })
     }
 }
 
 
 move(character).withArrowKeys(100, 250, handleDirectionChange)
-
-------------------
-// TESTING
-// const character = newImage('imgs/game-imgs/ANTS/ant-walk-west.gif')
-// let direction = null;
-// let x = 100;
-// let y = 250;
-
-// //Function to move Player Ant
-// setInterval(function() {
-//     if(direction === 'west'){
-//         x = x - 1
-//     }
-//     if(direction === 'east'){
-//         x = x + 1
-//     }
-//     if(direction === 'north'){
-//         y = y + 1
-//     }
-//     if(direction === 'south'){
-//         y = y - 1
-//     }
-//     character.style.left = x + 'px'
-//     character.style.bottom = y + 'px'
-// }, 1)
-
-
