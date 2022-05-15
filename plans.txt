@@ -61,6 +61,8 @@ until ant is closer?
 [] Die 
     -If Player Ant touches dangerous terrain, they die. 
     -Show Game Over screen
+        -Could game over screen be an ant ghost animation floating above
+            a gravestone? 
     -Show option to play again or quit
     https://blog.logrocket.com/build-a-game-with-html-css-javascript/
 []Collision Detection

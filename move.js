@@ -106,7 +106,7 @@ function move(element) {
 }
 
 // ///////////////////
-const character = newImage('assets/imgs/game-imgs/ANTS/ant-static-south.png')
+
 
 //changes character appearance based on direction. 
 //Direction parameter needed to connect scope to move function
@@ -156,7 +156,10 @@ function handleDirectionChange(direction){
 }
 
 
-move(character).withArrowKeys(100, 250, handleDirectionChange)
-
 //added ant hill
 move(newImage('assets/imgs/game-imgs/anthill-sprite.png')).to(500, 350)
+
+const character = newImage('assets/imgs/game-imgs/ANTS/ant-static-south.png')
+
+move(character).withArrowKeys(100, 250, handleDirectionChange)
+

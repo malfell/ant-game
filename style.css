@@ -1,18 +1,24 @@
-* {
-    background-color: beige;
-}
+
 
 /* Window where game will be played */
-#game-window {
-    width: 40em;
-    height: 30em;
-    border-width: .2em;
-    border-style: solid;
-    /* margin: auto; */
+.wrapper {
+    border: 4px solid black;
+    /* Centering */
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    /* Make a sprite background later */
+    background-color: rgb(97, 156, 113);
 }
 
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+/* Positions canvas in the center middle */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
