@@ -1,5 +1,12 @@
 // General functions taken from JS-Webgame-Activity
 
+const newImage = (url) => {
+    let image = document.createElement('img') //creates the img
+    image.src = url //gets the images url or relative path
+    document.body.append(image) //adds image to the body
+    return image
+}
+
 function move(element) {
     element.style.position = 'fixed' //fixes the position of image
 
