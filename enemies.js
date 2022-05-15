@@ -17,8 +17,8 @@ class Enemy {
         ctx1.fillStyle = 'pink';
         ctx1.fillRect(this.x, this.y, this.width, this.height);
     }
-    update(){
-        //makes enemies move
+    updateLeftRight(){
+        //makes enemies move left and right
         this.x += this.speed * gameSpeed;
         //once object goes off the screen, it'll come back
         //on the other side
@@ -34,20 +34,66 @@ class Enemy {
             }
         }
     }
+
+    updateUpDown(){
+        //makes enemies move up and down
+        this.y += this.speed * gameSpeed;
+        //once object goes off the screen, it'll come back
+        //on the other side
+        if(this.speed > 0){
+            //extra this.width adds more time before enemy
+            //appears again
+            if(this.y > canvas.height + this.height){
+                this.y = 0 - this.height;
+            }
+        } else {
+            if(this.y < 0 - this.height){
+                this.y = canvas.height + this.height
+            }
+        }
+    }
 }
 
 function initEnemies(){
+    //2 spiders moving right above anthill
     for(let i = 0; i < 2; i++){
-        let x = i * 350;
+        //space in between 2 spiders is 160
+        let x = i * 160;
         enemiesArray.push(new Enemy(x, canvas.height - grid * 5 - 5, grid - 40, grid - 40, 2, 'spider'));
+    }
+
+    //1 spider moving left below anthill
+    for(let i = 0; i < 1; i++){
+        //space in between 2 spiders is 160
+        let x = i * 160;
+        enemiesArray.push(new Enemy(x, canvas.height - grid * 3 - 5, grid - 40, grid - 40, -5, 'spider'));
+    }
+
+    //1 spider moving left below anthill
+    for(let i = 0; i < 1; i++){
+        //space in between 2 spiders is 160
+        let x = i * 300;
+        enemiesArray.push(new Enemy(x, canvas.height - grid * 1 - 5, grid - 40, grid - 40, -3, 'spider'));
+    }
+
+    //1 spider moving left below anthill
+    for(let i = 0; i < 1; i++){
+        //space in between 2 spiders is 160
+        let x = i * 300;
+        enemiesArray.push(new Enemy(x, canvas.height - grid, grid - 40, grid - 40, 2, 'spider'));
     }
 }
 initEnemies();
 
+// Make enemies move up/down and right/left too?
+
 //cycles through enemy array
 function handleEnemies(){
+    //makes enemies move diagonally
     for(let i = 0; i < enemiesArray.length; i++){
-        enemiesArray[i].update();
+        enemiesArray[i].updateLeftRight();
+        enemiesArray[i].updateUpDown();
         enemiesArray[i].draw();
     }
+
 }
