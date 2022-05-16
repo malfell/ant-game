@@ -162,11 +162,11 @@ function handleDirectionChange(direction){
     }
 }
 
-move(newItem('assets/imgs/game-imgs/food-sprite-2.png')).to(200, 250)
+// move(newItem('assets/imgs/game-imgs/food-sprite.png')).to(200, 250)
 
-move(newItem('assets/imgs/game-imgs/food-sprite-2.png')).to(300, 500)
+// move(newItem('assets/imgs/game-imgs/food-sprite.png')).to(300, 500)
 
-move(newItem('assets/imgs/game-imgs/food-sprite-2.png')).to(900, 200)
+// move(newItem('assets/imgs/game-imgs/food-sprite.png')).to(900, 200)
 
 //added ant hill
 move(newImage('assets/imgs/game-imgs/anthill-sprite.png')).to(500, 350)

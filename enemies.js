@@ -14,8 +14,8 @@ class Enemy {
     }
     //draws enemy bases
     draw(){
-        ctx1.fillStyle = 'pink';
-        ctx1.fillRect(this.x, this.y, this.width, this.height);
+        ctx4.fillStyle = 'pink';
+        ctx4.fillRect(this.x, this.y, this.width, this.height);
     }
     updateLeftRight(){
         //makes enemies move left and right
