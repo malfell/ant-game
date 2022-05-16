@@ -169,7 +169,7 @@ function handleDirectionChange(direction){
 // move(newItem('assets/imgs/game-imgs/food-sprite.png')).to(900, 200)
 
 //added ant hill
-move(newImage('assets/imgs/game-imgs/anthill-sprite.png')).to(500, 350)
+// move(newImage('assets/imgs/game-imgs/anthill-sprite.png')).to(500, 350)
 
 const character = newImage('assets/imgs/game-imgs/ANTS/ant-static-south.png')
 

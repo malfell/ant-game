@@ -7,6 +7,7 @@ function gameStart(){
     //maybe remove this later?
     ctx2.clearRect(0, 0, canvas.width, canvas.height);
     handleFood();
+    handleAnthill();
     //clears ant sprite
     ctx3.clearRect(0, 0, canvas.width, canvas.height);
     //clears enemies

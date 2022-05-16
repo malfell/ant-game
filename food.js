@@ -13,6 +13,7 @@ class Food{
 
     //places food
     //randomly across screen or in specific spots?
+    //specific spots for now. Could be randomized later.
     place(){
 
     //foodSprite image, coords, width/height

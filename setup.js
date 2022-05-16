@@ -39,9 +39,16 @@ let gameSpeed = 1;
 
 const enemiesArray = [];
 
+//creating initial images and changing src name to something shorter
+//ant sprite
 const antSprite = new Image();
 antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-south.png'
 
+//food sprite
 const foodSprite = new Image();
 foodSprite.src = 'assets/imgs/game-imgs/food-sprite.png'
+
+//anthill sprite
+const anthillSprite = new Image()
+anthillSprite.src = 'assets/imgs/game-imgs/anthill-sprite.png'
 
