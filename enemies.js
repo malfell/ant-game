@@ -95,5 +95,12 @@ function handleEnemies(){
         enemiesArray[i].updateUpDown();
         enemiesArray[i].draw();
     }
+    //but why there's only a collision on SOME objects?
+    //AND collisions when nothing is happening???
+    for(let i = 0; i < enemiesArray.length; i++){
+        if(collision(antPC, enemiesArray[i])){
+            console.log('ow')
+        }
+    }
 
 }

@@ -49,6 +49,8 @@ function move(element) {
             if(direction === 'south'){
                 y-=.7
             }
+            //needed because ant will run but not
+            //actually go anywhere
             element.style.left = x + 'px'
             element.style.bottom = y + 'px'
         }

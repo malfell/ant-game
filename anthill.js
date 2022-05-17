@@ -19,6 +19,13 @@ class Anthill {
         //anthillSprite image, coords, width/height
         ctx2.drawImage(anthillSprite, 400, 300, this.width, this.height);
     }
+
+    //function to enter anthill and win the game
+    //must collect all food first
+    //then have collision detection to allow win
+    enterAnthill(){
+
+    }
 }
 
 //general function to handle anthill

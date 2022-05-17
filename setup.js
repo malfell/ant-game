@@ -30,6 +30,7 @@ canvas5.width = 800;
 canvas5.height = 600;
 
 //global variables
+//grid is 80 pixels, accounts for movement at a time
 const grid = 80;
 let keys = [];
 let score = 0;

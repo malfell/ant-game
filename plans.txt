@@ -39,13 +39,13 @@ until ant is closer?
     -Might be later function though
 [] Quit Button
     -When player presses quit, the game will end
-[]Place Items
-    -Player Ant
-    -Background
-    -Objects
-    -Food
-    -Anthill
-    -Enemies
+[] Place Items
+    [] Player Ant
+    [] Background
+    [] Objects
+    [X] Food
+    [X] Anthill
+    [] Enemies
 [X] Move Player Ant 
     -Player Ant must be able to move with the arrow keys
     -If player is not moving, then ant will be still
@@ -58,6 +58,7 @@ until ant is closer?
     -Food will appear in inventory? Or food will appear on ants back?
     -Food will appear in inventory FIRST. If you get the normal stuff
     working, then maybe it can appear on the ant's back. Not priority yet. 
+    -Or just show a score for food collected
 [] Die 
     -If Player Ant touches dangerous terrain, they die. 
     -Show Game Over screen

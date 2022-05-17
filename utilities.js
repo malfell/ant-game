@@ -10,6 +10,7 @@ function gameStart(){
     handleAnthill();
     //clears ant sprite
     ctx3.clearRect(0, 0, canvas.width, canvas.height);
+    handleAnt();
     //clears enemies
     ctx4.clearRect(0, 0, canvas.width, canvas.height);
     handleEnemies();
@@ -20,3 +21,4 @@ function gameStart(){
 }
 
 gameStart();
+

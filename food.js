@@ -9,25 +9,25 @@ class Food{
         //consistent type for now. Maybe there could be variety later.
         this.width = 10;
         this.height = 10;
-    }
+    };
 
     //places food
     //randomly across screen or in specific spots?
     //specific spots for now. Could be randomized later.
     place(){
-
-    //foodSprite image, coords, width/height
-    ctx2.drawImage(foodSprite, 100, 250, this.width, this.height);
-    ctx2.drawImage(foodSprite, 300, 500, this.width, this.height);
-    ctx2.drawImage(foodSprite, 700, 200, this.width, this.height);
+        //foodSprite image, coords, width/height
+        ctx2.drawImage(foodSprite, 100, 250, this.width, this.height);
+        ctx2.drawImage(foodSprite, 300, 500, this.width, this.height);
+        ctx2.drawImage(foodSprite, 700, 200, this.width, this.height);
 
 
     };
 
     //lets ant collect food
-    // collect(){
-
-    // }
+    collect(){
+        collision(character, foodSprite);
+        console.log('food')
+    }
 };
 
 
@@ -35,6 +35,7 @@ class Food{
 // functions for placeFood and collectFood combined
 function handleFood(){
     food.place();
+
 }
 
 function newItem(url){
