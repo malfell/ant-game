@@ -24,15 +24,28 @@ class Ant {
         ctx3.drawImage(antSprite, this.x, this.y, this.width, this.height);
     }
 
+    //Probably a better way to do the right and down
+    //movements instead of a specific number. 
+    //Check the frogger game later, but this
+    //works for now.
+
     //movement controls
     movementControls(){
-        if(this.direction === 'left'){
+        //ant can move left as long as its
+        //x position is greater than 0
+        if(this.direction === 'left' && this.x > 0){
             this.x-=5;
-        } if(this.direction === 'right'){
+        //ant can move right as long as its
+        //x position is less than 780
+        } if(this.direction === 'right' && this.x < 780){
             this.x+=5;
-        } if(this.direction === 'up'){
+        //ant can move up as long as its
+        //y position is greater than 0
+        } if(this.direction === 'up' && this.y > 0){
             this.y-=5;
-        } if(this.direction === 'down'){
+        //ant can move down as long as its
+        //y position is less than 570
+        } if(this.direction === 'down' && this.y < 570){
             this.y+=5;
         }
     }   
