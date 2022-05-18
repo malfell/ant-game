@@ -175,5 +175,7 @@ function handleDirectionChange(direction){
 
 const character = newImage('assets/imgs/game-imgs/ANTS/ant-static-south.png')
 
-move(character).withArrowKeys(100, 250, handleDirectionChange)
+move(character).withArrowKeys(420, 340, handleDirectionChange)
 
+//antSprite image, coords, width/height
+// ctx3.drawImage(antSprite, this.x, this.y, this.width, this.height);

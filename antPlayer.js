@@ -18,118 +18,60 @@ class Ant {
 
     //places ant
     place(){
-        ctx3.fillStyle = 'blue';
-        ctx3.fillRect(this.x, this.y, this.width, this.height);
+        // ctx3.fillStyle = 'burlywood';
+        // ctx3.fillRect(this.x, this.y, this.width, this.height);
         //antSprite image, coords, width/height
         ctx3.drawImage(antSprite, this.x, this.y, this.width, this.height);
-        
-    };
-
-    // MOVEMENT??
-    //defining directions
-    move(){
-        if(this.direction === 'west'){
-            this.x-=0.7
-        }
-
-        if(this.direction === 'north'){
-            this.y+=.7
-        }
-
-        if(this.direction === 'east'){
-            this.x+=.7
-        }
-
-        if(this.direction === 'south'){
-            this.y-=.7
-        }
     }
 
-    keyGoesDown(){
-        // Click arrow keys for movement! "e" needed for checking
-        //which key was pressed. When keys are pressed, element moves.
-        document.addEventListener('keydown', function(e){
-            //let user hold down key to keep movement happening
-            if(e.repeat) return;
-            //match directions with appropriate arrowkeys
-            if(e.key === 'ArrowLeft'){
-                this.direction = 'west'
-            }
-            if(e.key === 'ArrowUp'){
-                this.direction = 'north'
-            }
+    //movement controls
+    movementControls(){
+        if(this.direction === 'left'){
+            this.x-=5;
+        } if(this.direction === 'right'){
+            this.x+=5;
+        } if(this.direction === 'up'){
+            this.y-=5;
+        } if(this.direction === 'down'){
+            this.y+=5;
+        }
+    }   
+    
+}
 
-            if(e.key === 'ArrowRight'){
-                this.direction = 'east'
-            }
-            if(e.key === 'ArrowDown'){
-                this.direction = 'south'
-            }
-            
-            // callback(this.direction)
-        })
+//keyboard controls
+document.addEventListener('keydown', function(e){
+    //if key is held down, ant keeps moving
+    if(e.repeat) return;
 
+    if(e.key === 'ArrowLeft'){
+        antPC.direction = 'left';
+    }
+    if(e.key === 'ArrowRight'){
+        antPC.direction = 'right';
+    }
+    if(e.key === 'ArrowUp'){
+        antPC.direction = 'up';
     }
 
-    keyGoesUp(){
-        // When no keys are pressed, the thing
-        //stays still
-        document.addEventListener('keyup', function(e){
-            this.direction = null
-            // callback(this.direction)
-        })
+    if(e.key === 'ArrowDown'){
+        antPC.direction = 'down';
     }
 
-    handleDirectionChange(){
-        if(this.direction === 'west'){
-            antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-west.gif'
-            // When key stops being pressed, the ant image will become
-            //the static version of the gif.
-            //Current issue is that if there's a quick click, there
-            //won't be animation. Ant will just slide.
-            document.addEventListener('keyup', function(){
-                antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-west.png'
-            })
-        }
-        if(this.direction === 'north'){
-            antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-north.gif'
-            document.addEventListener('keyup', function(){
-                antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-north.png'
-            })
-        }
-        if(this.direction === 'east'){
-            antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-east.gif'
-            document.addEventListener('keyup', function(){
-                antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-east.png'
-            })
-        }
-        if(this.direction === 'south'){
-            antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-south.gif'
-            document.addEventListener('keyup', function(){
-                antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-south.png'
-            })
-        }
-    }
-
-};
-
-
-
-
-
+})
+document.addEventListener('keyup', function(e){
+    antPC.direction = '';
+})
 // functions for placeFood and collectFood combined
 function handleAnt(){
     antPC.place();
-    antPC.keyGoesDown();
-    antPC.keyGoesUp();
-    antPC.handleDirectionChange();
-    antPC.move();
-    setInterval(antPC.move, 1)
-    
-
+    antPC.movementControls();
 
 }
 
+
+
 //creates new ant
 const antPC = new Ant();
+
 

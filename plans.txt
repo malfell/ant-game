@@ -168,3 +168,8 @@ Presentation
 -Did the student present the project to the class? 
 -Is the site deployed where others can access?
 
+EXTRA LINKS
+HIT DETECTION
+https://stackoverflow.com/questions/29916874/can-you-tell-if-one-element-is-touching-another-using-javascript
+
+https://www.youtube.com/watch?v=rqEJ7WiLWdo&t=10s&ab_channel=AdamKhoury

@@ -73,14 +73,14 @@ function initEnemies(){
     for(let i = 0; i < 1; i++){
         //space in between 2 spiders is 160
         let x = i * 300;
-        enemiesArray.push(new Enemy(x, canvas.height - grid * 1 - 5, grid - 40, grid - 40, -3, 'spider'));
+        enemiesArray.push(new Enemy(x, canvas.height - grid * 4 - 5, grid - 40, grid - 40, 1, 'spider'));
     }
 
     //1 spider moving left below anthill
     for(let i = 0; i < 1; i++){
         //space in between 2 spiders is 160
         let x = i * 300;
-        enemiesArray.push(new Enemy(x, canvas.height - grid, grid - 40, grid - 40, 2, 'spider'));
+        enemiesArray.push(new Enemy(x, canvas.height - grid, grid - 40, grid - 40, 4, 'spider'));
     }
 }
 initEnemies();
@@ -95,11 +95,14 @@ function handleEnemies(){
         enemiesArray[i].updateUpDown();
         enemiesArray[i].draw();
     }
-    //but why there's only a collision on SOME objects?
-    //AND collisions when nothing is happening???
+
+    //Collision detection for enemies!
+    //If ant is hit by enemy, the game ends.
     for(let i = 0; i < enemiesArray.length; i++){
         if(collision(antPC, enemiesArray[i])){
-            console.log('ow')
+            console.log('ow');
+            // gameOver();
+
         }
     }
 

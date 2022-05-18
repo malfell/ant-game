@@ -1,58 +1,99 @@
-let img = new Image();
-img.src = 'https://opengameart.org/sites/default/files/Green-Cap-Character-16x18.png';
-img.onload = function() {
-  window.requestAnimationFrame(gameLoop);
+//places ant
+place(){
+  ctx3.fillStyle = 'blue';
+  ctx3.fillRect(this.x, this.y, this.width, this.height);
+  //antSprite image, coords, width/height
+  let antTest = ctx3.drawImage(antSprite, this.x, this.y, this.width, this.height);
+  
 };
 
-const canvas6 = document.getElementById('canvas6');
-const ctx6 = canvas6.getContext('2d');
-canvas6.width = 800;
-canvas6.height = 600;
-
-const SCALE = 2;
-const WIDTH = 16;
-const HEIGHT = 18;
-const SCALED_WIDTH = SCALE * WIDTH;
-const SCALED_HEIGHT = SCALE * HEIGHT;
-
-function drawFrame(frameX, frameY, canvasX, canvasY) {
-  ctx6.drawImage(img,
-                frameX * WIDTH, frameY * HEIGHT, WIDTH, HEIGHT,
-                canvasX, canvasY, SCALED_WIDTH, SCALED_HEIGHT);
-}
-
-const CYCLE_LOOP = [0, 1, 0, 2];
-let currentLoopIndex = 0;
-let frameCount = 0;
-let currentDirection = 0;
-let keyPresses = {};
-
-window.addEventListener('keydown', keyDownListener);
-function keyDownListener(event) {
-    keyPresses[event.key] = true;
-}
-
-window.addEventListener('keyup', keyUpListener);
-function keyUpListener(event) {
-    keyPresses[event.key] = false;
-}
-
-const MOVEMENT_SPEED = 1;
-let positionX = 0;
-let positionY = 0;
-
-function gameLoop() {
-  ctx6.clearRect(0, 0, canvas.width, canvas.height);
-  if (keyPresses.w) {
-    positionY -= MOVEMENT_SPEED;
-  } else if (keyPresses.s) {
-    positionY += MOVEMENT_SPEED;
+// MOVEMENT??
+//defining directions
+move(){
+  if(this.direction === 'west'){
+      this.x-=0.7
   }
-  if (keyPresses.a) {
-    positionX -= MOVEMENT_SPEED;
-  } else if (keyPresses.d) {
-    positionX += MOVEMENT_SPEED;
+
+  if(this.direction === 'north'){
+      this.y+=.7
   }
-  drawFrame(0, 0, positionX, positionY);
-  window.requestAnimationFrame(gameLoop);
+
+  if(this.direction === 'east'){
+      this.x+=.7
+  }
+
+  if(this.direction === 'south'){
+      this.y-=.7
+  }
+
+}
+
+keyGoesDown(){
+  // Click arrow keys for movement! "e" needed for checking
+  //which key was pressed. When keys are pressed, element moves.
+  document.addEventListener('keydown', function(e){
+      //let user hold down key to keep movement happening
+      if(e.repeat) return;
+      //match directions with appropriate arrowkeys
+      if(e.key === 'ArrowLeft'){
+          this.direction = 'west'
+          console.log('w')
+      }
+      if(e.key === 'ArrowUp'){
+          this.direction = 'north'
+          console.log('n')
+      }
+
+      if(e.key === 'ArrowRight'){
+          this.direction = 'east'
+          console.log('e')
+      }
+      if(e.key === 'ArrowDown'){
+          this.direction = 'south'
+          console.log('s')
+      }
+      
+      // callback(this.direction)
+  })
+
+}
+
+keyGoesUp(){
+  // When no keys are pressed, the thing
+  //stays still
+  document.addEventListener('keyup', function(e){
+      this.direction = null
+      // callback(this.direction)
+  })
+}
+
+handleDirectionChange(){
+  if(this.direction === 'west'){
+      antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-west.gif'
+      // When key stops being pressed, the ant image will become
+      //the static version of the gif.
+      //Current issue is that if there's a quick click, there
+      //won't be animation. Ant will just slide.
+      document.addEventListener('keyup', function(){
+          antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-west.png'
+      })
+  }
+  if(this.direction === 'north'){
+      antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-north.gif'
+      document.addEventListener('keyup', function(){
+          antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-north.png'
+      })
+  }
+  if(this.direction === 'east'){
+      antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-east.gif'
+      document.addEventListener('keyup', function(){
+          antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-east.png'
+      })
+  }
+  if(this.direction === 'south'){
+      antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-walk-south.gif'
+      document.addEventListener('keyup', function(){
+          antSprite.src = 'assets/imgs/game-imgs/ANTS/ant-static-south.png'
+      })
+  }
 }
