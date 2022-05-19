@@ -44,7 +44,19 @@ function collect(){
 
 
 function handleFood(){
-    collect();
+    //food will stop appearing once score reaches 3
+    if(score < 3){
+        collect();
+    }
+
+    //once food collected reaches 3, the ant can go home
+    if(score === 3){
+        ctx2.font = '24px Arial';
+        ctx2.fillStyle = 'black';
+        let string = 'Go home!';
+        ctx2.fillText(string, 20, 30);
+    }
+    
 }
 
 //should be a way to get all the food into an array like the enemies array

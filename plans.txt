@@ -73,6 +73,7 @@ until ant is closer?
 [] Score
     -Either have food collected score be outside of the canvas
     -Or make sure ant and food can't touch the score
+    -Could food stop spawning once you reach 3?
 
 ---------------------LATER JAVASCRIPT----------------
 [] Enemy Movement

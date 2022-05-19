@@ -16,8 +16,9 @@ class Anthill {
 
     //places the anthill
     place(){
-        ctx2.fillStyle = 'cornflowerblue';
-        ctx2.fillRect(this.x, this.y, this.width, this.height);
+        // hitbox 
+        // ctx2.fillStyle = 'cornflowerblue';
+        // ctx2.fillRect(this.x, this.y, this.width, this.height);
         //anthillSprite image, coords, width/height
         ctx2.drawImage(anthillSprite, this.x, this.y, this.width, this.height);
 
@@ -27,8 +28,15 @@ class Anthill {
     //ant can enter anthill
     enter(){
         if(score >= 3){
+        //Maybe have a message pop up?
+        // ctx2.font = '42px Verdana';
+        // ctx2.fillStyle = 'gold';
+        // let homeMessage = 'Hurry home!';
+        // ctx2.fillText(homeMessage, 300, 40);
+
            if(collision(antPC, anthill)){
             console.log('home!');
+            // alert('Win!')
         } 
         }
         

@@ -13,7 +13,7 @@ function gameStart(){
     handleAnt();
     //clears enemies
     ctx4.clearRect(0, 0, canvas.width, canvas.height);
-    // handleEnemies();
+    handleEnemies();
 
     //creates animation loop on recursion
     //calls itself over and over
