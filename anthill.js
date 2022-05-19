@@ -26,10 +26,12 @@ class Anthill {
 
     //ant can enter anthill
     enter(){
-        if(collision(antPC, anthill)){
+        if(score >= 3){
+           if(collision(antPC, anthill)){
             console.log('home!');
-
+        } 
         }
+        
     }
 
 }

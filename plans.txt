@@ -70,6 +70,9 @@ until ant is closer?
     -if enterAnthill
     -if collectFood
     -if die
+[] Score
+    -Either have food collected score be outside of the canvas
+    -Or make sure ant and food can't touch the score
 
 ---------------------LATER JAVASCRIPT----------------
 [] Enemy Movement
