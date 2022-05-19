@@ -40,7 +40,7 @@ until ant is closer?
 [] Quit Button
     -When player presses quit, the game will end
 [] Place Items
-    [] Player Ant
+    [X] Player Ant
     [] Background
     [] Objects
     [X] Food

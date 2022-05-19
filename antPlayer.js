@@ -18,8 +18,8 @@ class Ant {
 
     //places ant
     place(){
-        // ctx3.fillStyle = 'burlywood';
-        // ctx3.fillRect(this.x, this.y, this.width, this.height);
+        ctx3.fillStyle = 'burlywood';
+        ctx3.fillRect(this.x, this.y, this.width, this.height);
         //antSprite image, coords, width/height
         ctx3.drawImage(antSprite, this.x, this.y, this.width, this.height);
     }
@@ -54,6 +54,11 @@ class Ant {
 
 //keyboard controls
 document.addEventListener('keydown', function(e){
+    //just to prevent the keys from doing
+    //anything else, like scrolling the page down
+    //Probably not necessary since the window doesn't
+    //have a scroll bar, but it probably can't hurt
+    e.preventDefault();
     //if key is held down, ant keeps moving
     if(e.repeat) return;
 
@@ -75,10 +80,12 @@ document.addEventListener('keydown', function(e){
 document.addEventListener('keyup', function(e){
     antPC.direction = '';
 })
+
 // functions for placeFood and collectFood combined
 function handleAnt(){
     antPC.place();
     antPC.movementControls();
+
 
 }
 

@@ -4,10 +4,10 @@
 //more than one anthill, but I figure it can't hurt to have
 //the possibility open
 class Anthill {
-    constructor(x, y){
+    constructor(){
         //placement of anthill
-        this.x = x;
-        this.y = y;
+        this.x = 400;
+        this.y = 300;
         //width and height of anthill
         //consistent type for now
         this.width = 58;
@@ -16,8 +16,10 @@ class Anthill {
 
     //places the anthill
     place(){
+        ctx2.fillStyle = 'cornflowerblue';
+        ctx2.fillRect(this.x, this.y, this.width, this.height);
         //anthillSprite image, coords, width/height
-        ctx2.drawImage(anthillSprite, 400, 300, this.width, this.height);
+        ctx2.drawImage(anthillSprite, this.x, this.y, this.width, this.height);
 
 
     }
@@ -41,7 +43,7 @@ class Anthill {
 //general function to handle anthill
 function handleAnthill(){
     anthill.place();
-    // anthill.enter();
+    anthill.enter();
 
 }
 

@@ -39,6 +39,7 @@ let frame = 0;
 let gameSpeed = 1;
 
 const enemiesArray = [];
+const foodArray = [];
 
 //creating initial images and changing src name to something shorter
 //ant sprite
