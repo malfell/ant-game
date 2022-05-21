@@ -100,8 +100,7 @@ function handleEnemies(){
     //If ant is hit by enemy, the game ends.
     for(let i = 0; i < enemiesArray.length; i++){
         if(collision(antPC, enemiesArray[i])){
-            console.log('ow');
-            // gameOver();
+            gameOver();
 
         }
     }

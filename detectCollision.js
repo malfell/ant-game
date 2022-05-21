@@ -15,5 +15,27 @@ function collision(first, second){
 
 //when ant is hit, the game will be over
 function gameOver(){
-    alert('Game Over')
+    //game over variables
+    let playAgain = document.getElementById('playAgainButton');
+    let goBack = document.getElementById('goBack3');
+    let gameOverScreen = document.getElementById('game-over');
+    let wrapper = document.querySelector('.wrapper');
+    let start = document.getElementById('main-menu');
+    //switches to Game Over screen
+    wrapper.style.display = 'none';
+    gameOverScreen.style.display = 'block';
+
+    //lets user play again
+    playAgain.addEventListener('click', function(){
+        wrapper.style.display = 'block';
+        gameOverScreen.style.display = 'none';
+    })
+
+    //lets user return to main menu
+    goBack.addEventListener('click', function(){
+        start.style.display = 'block';
+        gameOverScreen.style.display = 'none';
+    })
+
+
 }

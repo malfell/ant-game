@@ -28,10 +28,6 @@
     <link href="http://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">
 </head>
 <body>
-    <!-- Header gets game title or maybe logo -->
-    <!-- <header>
-        <h1>Ant Game really needs a title</h1>
-    </header> -->
 
     <!-- Main Menu -->
     <menu id="main-menu" style="display:block">
@@ -80,6 +76,14 @@
         </ul>
         <button type="button" class="goBack" id="goBack2">Return to Main Menu</button>
     </info>
+
+    <!-- Game Over screen is hidden until player loses -->
+    <game id="game-over" style="display:none">
+        <img src="assets\imgs\game-imgs\game-over.gif" alt="Gif of ghost ant hovering over a grave">
+        <button type="button" id="playAgainButton">Play Again?</button>
+        <button type="button" class="goBack" id="goBack3">Return to Main Menu</button>
+
+    </game>
 
     <game class="wrapper" style="display:none">
         <canvas id="canvas1"></canvas>
