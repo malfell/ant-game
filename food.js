@@ -20,6 +20,7 @@ class Food{
 
 }
 
+//score updates on screen with each food collected
 function updateScore(){
     ctx2.font = '24px Arial';
     ctx2.fillStyle = 'black';
@@ -27,17 +28,18 @@ function updateScore(){
     ctx2.fillText(string, 20, 30);
 }
 
+//collects food with collision detection
 function collect(){
-    if(collision(antPC, f1)){
+    if(collision(antPC, food)){
         score += 1;
         ctx2.clearRect(0, 0, canvas.width, canvas.height);
         //but maybe a better way to have all the food show up at once?
-        f1.x = Math.floor(Math.random() * (800 - 50));
-        f1.y = Math.floor(Math.random() * (600 - 50));
+        food.x = Math.floor(Math.random() * (800 - 50));
+        food.y = Math.floor(Math.random() * (600 - 50));
         updateScore();
     } else{
         ctx2.clearRect(0, 0, canvas.width, canvas.height);
-        f1.draw();
+        food.draw();
         updateScore();
     }
 }
@@ -53,7 +55,7 @@ function handleFood(){
     if(score === 3){
         ctx2.font = '24px Arial';
         ctx2.fillStyle = 'black';
-        let string = 'Go home!';
+        let string = 'All food gathered! Go home!';
         ctx2.fillText(string, 20, 30);
     }
     
@@ -61,6 +63,4 @@ function handleFood(){
 
 //should be a way to get all the food into an array like the enemies array
 //go back to this later
-let f1 = new Food();
-// let f2 = new Food();
-// let f3 = new Food();
+let food = new Food();

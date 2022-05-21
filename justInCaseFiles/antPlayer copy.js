@@ -14,10 +14,7 @@ class Ant {
         //Then there'll be a static 
         //image when ant isn't moving 
         this.direction = null;
-        //animation frames. These frames will change, and
-        //sprite will animate.
-        this.framex = 0;
-        this.framey = 0;
+        //these frames will change for animation
     };
 
     //places ant
@@ -57,8 +54,7 @@ class Ant {
 }
 
 //keyboard controls
-function movePlayer(player){
-    document.addEventListener('keydown', function(e){
+document.addEventListener('keydown', function(e){
     //just to prevent the keys from doing
     //anything else, like scrolling the page down
     //Probably not necessary since the window doesn't
@@ -68,25 +64,23 @@ function movePlayer(player){
     if(e.repeat) return;
 
     if(e.key === 'ArrowLeft'){
-        player.direction = 'left';
+        antPC.direction = 'left';
     }
     if(e.key === 'ArrowRight'){
-        player.direction = 'right';
+        antPC.direction = 'right';
     }
     if(e.key === 'ArrowUp'){
-        player.direction = 'up';
+        antPC.direction = 'up';
     }
 
     if(e.key === 'ArrowDown'){
-        player.direction = 'down';
+        antPC.direction = 'down';
     }
 
 })
 document.addEventListener('keyup', function(e){
-    player.direction = '';
+    antPC.direction = '';
 })
-}
-
 
 
 
@@ -94,7 +88,6 @@ document.addEventListener('keyup', function(e){
 function handleAnt(){
     antPC.place();
     antPC.movementControls();
-    movePlayer(antPC);
 
 
 

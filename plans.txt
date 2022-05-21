@@ -66,11 +66,11 @@ until ant is closer?
             a gravestone? 
     -Show option to play again or quit
     https://blog.logrocket.com/build-a-game-with-html-css-javascript/
-[]Collision Detection
+[X]Collision Detection
     -if enterAnthill
     -if collectFood
     -if die
-[] Score
+[X] Score
     -Either have food collected score be outside of the canvas
     -Or make sure ant and food can't touch the score
     -Could food stop spawning once you reach 3?
@@ -84,15 +84,15 @@ until ant is closer?
 [] Instructions button 
 
 -------------------ART/GRAPHICS----------------------
-[] Player Ant
-    [] Left movement gif
-    [] Right movement gif
-    [] Up/down movement gif?
-[] Ant hill
+[X] Player Ant
+    [X] Left movement gif
+    [X] Right movement gif
+    [X] Up/down movement gif?
+[X] Ant hill
 [] Background
 [] Objects
 [] Terrain 
-[] Food scraps
+[X] Food scraps
 
 Ant Resources
 Walking Cycle side view:

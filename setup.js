@@ -34,7 +34,7 @@ canvas5.height = 600;
 const grid = 80;
 let keys = [];
 let score = 0;
-let collisionsCount = 0;
+//frame for sprite animation
 let frame = 0;
 let gameSpeed = 1;
 
@@ -53,4 +53,3 @@ foodSprite.src = 'assets/imgs/game-imgs/food-sprite.png'
 //anthill sprite
 const anthillSprite = new Image()
 anthillSprite.src = 'assets/imgs/game-imgs/anthill-sprite.png'
-
