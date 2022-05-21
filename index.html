@@ -43,6 +43,7 @@
     <!-- Instructions and Controls will appear on button click -->
     <info id="instructions" style="display:none">
         <!-- Button to take user back to menu -->
+        <h2>Instructions and Controls</h2>
         <p>
             You play as an unfortunate ant who cannot return home until you 
             collect enough food even though there are spiders swarming the 
@@ -55,19 +56,29 @@
         If you collect enough food, your ant colony will accept you again (how nice of them!)
         Navigate the map to collect food without getting grabbed by any spiders.
         </p>
-        
         <p>Use the arrowkeys to move. </p>
         <p>Touch food with the ant player to collect it.</p>
         <p>When all food is collected, your ant colony will accept you again.  </p>
         <p>Touch the anthill with the ant player to return home and win. </p>
         <p>If you're hit by a spider, you die (and lose).</p>
-        <button type="button" id="goBack">Go Back</button>
+        <button type="button" class="goBack" id="goBack1">Return to Main Menu</button>
     </info>
 
     <info id="issues" style="display:none">
-        <ul>Known Issues
-            <li>Test</li>
+        <h2>Known Issues</h2>
+        <ul>
+            <li>If player presses a new arrow key while still 
+                holding down the last arrow key, the ant will 
+                freeze for a bit before being able to move.</li>
+            <li>Food can currently spawn on the ant hill. 
+                Shouldn't do that. </li>
+            <li>Canvas size slightly changes when you go between 
+                game, start, and instructions. I'm confused on that 
+                one because when I made everything the same size, 
+                it was off. So I ended up changing sizes 
+                individually to make them closer. </li>
         </ul>
+        <button type="button" class="goBack" id="goBack2">Return to Main Menu</button>
     </info>
 
     <game class="wrapper" style="display:none">
