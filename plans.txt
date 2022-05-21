@@ -37,6 +37,7 @@ until ant is closer?
     -When player presses pause, the game will pause
     -Then the pause button will turn into play button 
     -Might be later function though
+    -https://stackoverflow.com/questions/43814422/how-to-pause-simple-canvas-game-made-with-js-and-html5
 [] Quit Button
     -When player presses quit, the game will end
 [] Place Items
@@ -122,10 +123,10 @@ http://img0.joyreactor.com/pics/post/how-ant-walk-gif-1181931.gif
     -ant group is controlled with the arrow keys. 
 
 ------------------GRADE REQUIREMENTS------------------
-[] Must run in web browser
-[] Minimum of 10 commits
-[] Multiple commits per day
-[] This game can be designed for 2 or more players (PvP) or 1 player (PvE)
+[X] Must run in web browser
+[X] Minimum of 10 commits
+[X] Multiple commits per day (ideally)
+[X] This game can be designed for 2 or more players (PvP) or 1 player (PvE)
     -The second player in a PvP game can be a person or an AI
     -For multi-player games, turns should switch appropriately between players 
 [] This game should be winnable or it should keep score (whichever makes more sense)
@@ -136,9 +137,9 @@ http://img0.joyreactor.com/pics/post/how-ant-walk-gif-1181931.gif
 [] The HTML code should use sematic tags 
     - https://www.w3schools.com/html/html5_semantic_elements.asp
 [X] The game should have a Readme.md file in the GitHub repository 
-    [] that describes the inspiration for the game, 
-    [] explains the controls and how to play the game, 
-    [] lists the technologies used to build the game, 
+    [X] that describes the inspiration for the game, 
+    [X] explains the controls and how to play the game, 
+    [X?] lists the technologies used to build the game, 
     [] and addresses any outstanding bugs or unfinished functionality
 
 BONUS IDEAS

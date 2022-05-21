@@ -14,7 +14,10 @@ class Ant {
         //Then there'll be a static 
         //image when ant isn't moving 
         this.direction = null;
-        //these frames will change for animation
+        //animation frames. These frames will change, and
+        //sprite will animate.
+        this.framex = 0;
+        this.framey = 0;
     };
 
     //places ant
@@ -35,26 +38,27 @@ class Ant {
         //ant can move left as long as its
         //x position is greater than 0
         if(this.direction === 'left' && this.x > 0){
-            this.x-=2;
+            this.x-=3;
         //ant can move right as long as its
         //x position is less than 780
         } if(this.direction === 'right' && this.x < 780){
-            this.x+=2;
+            this.x+=3;
         //ant can move up as long as its
         //y position is greater than 0
         } if(this.direction === 'up' && this.y > 0){
-            this.y-=2;
+            this.y-=3;
         //ant can move down as long as its
         //y position is less than 570
         } if(this.direction === 'down' && this.y < 570){
-            this.y+=2;
+            this.y+=3;
         }
     }   
     
 }
 
 //keyboard controls
-document.addEventListener('keydown', function(e){
+function movePlayer(player){
+    document.addEventListener('keydown', function(e){
     //just to prevent the keys from doing
     //anything else, like scrolling the page down
     //Probably not necessary since the window doesn't
@@ -64,23 +68,25 @@ document.addEventListener('keydown', function(e){
     if(e.repeat) return;
 
     if(e.key === 'ArrowLeft'){
-        antPC.direction = 'left';
+        player.direction = 'left';
     }
     if(e.key === 'ArrowRight'){
-        antPC.direction = 'right';
+        player.direction = 'right';
     }
     if(e.key === 'ArrowUp'){
-        antPC.direction = 'up';
+        player.direction = 'up';
     }
 
     if(e.key === 'ArrowDown'){
-        antPC.direction = 'down';
+        player.direction = 'down';
     }
 
 })
 document.addEventListener('keyup', function(e){
-    antPC.direction = '';
+    player.direction = '';
 })
+}
+
 
 
 
@@ -88,6 +94,7 @@ document.addEventListener('keyup', function(e){
 function handleAnt(){
     antPC.place();
     antPC.movementControls();
+    movePlayer(antPC);
 
 
 
@@ -98,4 +105,5 @@ function handleAnt(){
 //creates new ant
 const antPC = new Ant();
 
+const antPCTest = new Ant();
 

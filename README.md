@@ -27,3 +27,6 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
     the last arrow key, the ant will freeze for a bit before
     being able to move.
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
+
+-----UNFINISHED FUNCTIONALITY----------------
+Most of the unfinished functionality is in plans.txt 

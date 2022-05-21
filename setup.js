@@ -1,4 +1,5 @@
 //setting up canvas
+
 //background layer
 const canvas = document.getElementById('canvas1');
 const ctx1 = canvas.getContext('2d');
@@ -24,22 +25,24 @@ const ctx4 = canvas4.getContext('2d');
 canvas4.width = 800;
 canvas4.height = 600;
 
-const canvas5 = document.getElementById('canvas5');
-const ctx5 = canvas5.getContext('2d');
-canvas5.width = 800;
-canvas5.height = 600;
+//Might be unneeded? Unless for game over screen?
+// const canvas5 = document.getElementById('canvas5');
+// const ctx5 = canvas5.getContext('2d');
+// canvas5.width = 800;
+// canvas5.height = 600;
 
 //global variables
 //grid is 80 pixels, accounts for movement at a time
 const grid = 80;
 let keys = [];
 let score = 0;
-//frame for sprite animation
-let frame = 0;
+
+//movement speed for enemies
 let gameSpeed = 1;
 
 const enemiesArray = [];
 const foodArray = [];
+
 
 //creating initial images and changing src name to something shorter
 //ant sprite

@@ -11,8 +11,10 @@
 
     <!-- JavaScript -->
     <script src="setup.js" defer></script>
+    <!-- <script src="game-over.js" defer></script> -->
+    <!-- <script src="spriteTest.js" defer></script> -->
     <script src="detectCollision.js" defer></script>
-    <script src="antPlayer.js" defer></script>
+    <script src="antPlayerBackup.js" defer></script>
     <script src="enemies.js" defer></script>
     <script src="food.js"></script>
     <script src="anthill.js" defer></script>
@@ -21,18 +23,23 @@
     <!-- Added a free ant icon from https://icon-icons.com/icon/ant/46796 -->
     <link rel="icon" href="assets\imgs\web-imgs\ant-icon.ico" alt="ant icon">
    
+    <!-- Added Proggy Clean font -->
+    <!-- https://www.cdnfonts.com/proggy-clean.font -->
+    <link href="http://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">
 </head>
 <body>
     <!-- Header gets game title or maybe logo -->
-    <header>
+    <!-- <header>
         <h1>Ant Game really needs a title</h1>
-    </header>
-    <!-- Nav will have the buttons -->
-    <nav>
+    </header> -->
 
-    </nav>
+    <menu id="start-game" style="display:block">
+        <h1>Ant Game</h1>
+        <button type="button" id="startButton">Start Game</button>
+        <button type="button" id="infoButton">Instructions and Controls</button>
+    </menu>
 
-    <game class="wrapper">
+    <game class="wrapper" style="display:none">
         <canvas id="canvas1"></canvas>
         <canvas id="canvas2"></canvas>
         <canvas id="canvas3"></canvas>

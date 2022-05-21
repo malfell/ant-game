@@ -20,5 +20,15 @@ function gameStart(){
     requestAnimationFrame(gameStart);
 }
 
-gameStart();
+// Button event to start the game
+let startButton = document.getElementById('startButton');
+startButton.addEventListener('click', function(){
+    let start = document.getElementById('start-game');
+    let wrapper = document.querySelector('.wrapper');
+    start.style.display = 'none';
+    wrapper.style.display = 'block';
+    gameStart();
+})
+
+
 
