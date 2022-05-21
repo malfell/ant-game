@@ -33,11 +33,42 @@
         <h1>Ant Game really needs a title</h1>
     </header> -->
 
-    <menu id="start-game" style="display:block">
+    <!-- Main Menu -->
+    <menu id="main-menu" style="display:block">
         <h1>Ant Game</h1>
         <button type="button" id="startButton">Start Game</button>
         <button type="button" id="infoButton">Instructions and Controls</button>
+        <button type="button" id="issuesButton">Known Issues</button>
     </menu>
+    <!-- Instructions and Controls will appear on button click -->
+    <info id="instructions" style="display:none">
+        <!-- Button to take user back to menu -->
+        <p>
+            You play as an unfortunate ant who cannot return home until you 
+            collect enough food even though there are spiders swarming the 
+            area for some reason unknown to you. Alas, your colony is not
+            willing to assist you or wait until the spiders leave. 
+        </p>
+        <p id="smaller">Perhaps they are trying to get rid of you.</p>
+
+        <p>
+        If you collect enough food, your ant colony will accept you again (how nice of them!)
+        Navigate the map to collect food without getting grabbed by any spiders.
+        </p>
+        
+        <p>Use the arrowkeys to move. </p>
+        <p>Touch food with the ant player to collect it.</p>
+        <p>When all food is collected, your ant colony will accept you again.  </p>
+        <p>Touch the anthill with the ant player to return home and win. </p>
+        <p>If you're hit by a spider, you die (and lose).</p>
+        <button type="button" id="goBack">Go Back</button>
+    </info>
+
+    <info id="issues" style="display:none">
+        <ul>Known Issues
+            <li>Test</li>
+        </ul>
+    </info>
 
     <game class="wrapper" style="display:none">
         <canvas id="canvas1"></canvas>

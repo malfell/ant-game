@@ -27,6 +27,7 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
     the last arrow key, the ant will freeze for a bit before
     being able to move.
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
+[] Canvas size slightly changes when you go between game, start, and instructions. I'm confused on that one because when I made everything the same size, it was off. So I ended up changing sizes individually to make them closer. 
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 
