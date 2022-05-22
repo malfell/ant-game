@@ -34,6 +34,8 @@ function collect(){
         score += 1;
         ctx2.clearRect(0, 0, canvas.width, canvas.height);
         //but maybe a better way to have all the food show up at once?
+        //I used the random position code from this link for the two below.
+        //https://blog.thejaytray.com/canvas-basics-07-random-positions/
         food.x = Math.floor(Math.random() * (800 - 50));
         food.y = Math.floor(Math.random() * (600 - 50));
         updateScore();
