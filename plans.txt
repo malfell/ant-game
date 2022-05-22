@@ -140,15 +140,15 @@ http://img0.joyreactor.com/pics/post/how-ant-walk-gif-1181931.gif
     [X] that describes the inspiration for the game, 
     [X] explains the controls and how to play the game, 
     [X?] lists the technologies used to build the game, 
-    [] and addresses any outstanding bugs or unfinished functionality
+    [X] and addresses any outstanding bugs or unfinished functionality
 
 BONUS IDEAS
 [] Make persistent scores in your browser's localStorage
 [] Add interesting music or sound effects to your game
 
 DELIVERABLES
-[] A link to your game, which is deployed somewhere on the internet
-[] A link to your GitHub repository, so we can see the progress on your game
+[X] A link to your game, which is deployed somewhere on the internet
+[X] A link to your GitHub repository, so we can see the progress on your game
 
 ----------------------GRADING SCALE----------------------------
 User Experience
