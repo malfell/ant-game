@@ -6,6 +6,8 @@ The original thought was that an ant could be trying to find a way home and need
 
 I also had slight regrets when after I chose to have an ant be the player character because I spent a long time staring at ant walking videos, slowing down the videos, and making frames of them just so I could replicate how an ant walks when I made the sprite. 
 
+Unfortunately, I ended up needing to change how the sprite worked, and I couldn't get it animated again by the deadline. 
+
 ------------CONTROLS AND HOW TO PLAY---------------
 You play as an unfortunate ant who cannot return home until you collect enough food even though there are spiders swarming the area for some unknown reason. Apparently the food must be collected now.
 
@@ -23,18 +25,18 @@ If you're hit by a spider, you die (and lose).
 Just JavaScript, CSS, and HTML? Is that what this is asking?
 
 -------------CURRENT ISSUES------------------
-[] If player presses a new arrow key while still holding down
-    the last arrow key, the ant will freeze for a bit before
-    being able to move.
+[] If player presses a new arrow key while still holding down the last arrow key, the ant will freeze for a bit before being able to move. Pressing any key while moving will freeze the and for a moment. The ant stops moving whenever any key on the keyboard is released, regardless of what key it is.
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
 [] Canvas size slightly changes when you go between game, start, and instructions. I'm confused on that one because when I made everything the same size, it was off. So I ended up changing sizes individually to make them closer. 
-[] Game continues to run after Game Over. If you click on play again or return to main menu, game will continue from where you left off. I took out out the play again button until I solve this. The return to main menu button will reload the whole page. Not the solution I wanted, but that's what I have for now.  
-[] There is an issue getting the game to restart properly. At the moment, I removed the "Play Again" button, and made the "Return to Menu" button reload the page. Not convenient but a slight temporarily solution.
+[] Game continues to run after Game Over. If you click on play again or return to main menu, game will continue from where you left off. I took out the play again button until I solve this. The return to main menu button will reload the whole page. Not the solution I wanted, but that's what I have for now.  
+[] There is an issue getting the game to restart properly. At the moment, I removed the "Play Again" button, and made the "Return to Menu" button reload the page. Not convenient but a slight temporary solution.
 [] There are no spiders or enemies. Just blocks. I haven't had time to make spider sprites.
 [] The ant sprite used to be animated, but there was an issue when changing the code. I need to go back and rework this.
 [] Game background could use work. I'd rather not have the single color background. 
 [] On the Winner screen, clicking back to menu button crashes the browser for some reason. I took out the button for now. 
 []If player dies many times in a row, the page will flicker between screens before returning to the home page. 
+[]If player is moving and right clicks on the screen at the same time, the ant will start drifting. 
+[]Sometimes enemies spawn too close to the player's starting position.
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 
