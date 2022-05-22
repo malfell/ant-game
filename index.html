@@ -73,6 +73,12 @@
                 one because when I made everything the same size, 
                 it was off. So I ended up changing sizes 
                 individually to make them closer. </li>
+            <li>Game continues to run after Game Over. 
+                If you click on play again or return to main menu, 
+                game will continue from where you left off. 
+                I took out out the play again button until I solve this. 
+                The return to main menu button will reload the whole page. 
+                Not the solution I wanted, but that's what I have for now. </li>
         </ul>
         <button type="button" class="goBack" id="goBack2">Return to Main Menu</button>
     </info>
@@ -80,7 +86,10 @@
     <!-- Game Over screen is hidden until player loses -->
     <game id="game-over" style="display:none">
         <img src="assets\imgs\game-imgs\game-over.gif" alt="Gif of ghost ant hovering over a grave">
-        <button type="button" id="playAgainButton">Play Again?</button>
+        <!-- Play Again Button is removed until I find a better way to
+        restart the game. Saw some YouTube tutorials that could help, but I'm
+        running out of time. -->
+        <!-- <button type="button" id="playAgainButton">Play Again?</button> -->
         <button type="button" class="goBack" id="goBack3">Return to Main Menu</button>
 
     </game>
@@ -90,7 +99,6 @@
         <canvas id="canvas2"></canvas>
         <canvas id="canvas3"></canvas>
         <canvas id="canvas4"></canvas>
-        <canvas id="canvas5"></canvas>
     </game>
     
 

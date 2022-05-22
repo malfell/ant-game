@@ -54,7 +54,6 @@ let issuesButton = document.getElementById('issuesButton');
 issuesButton.addEventListener('click', function(){
     start.style.display = 'none';
     issues.style.display = 'block';
-
     // I know there's a better way to make both goBack buttons
     //work for the same button, like maybe using forEach() from
     //what I vaguely Googled. I'm just not having enough time

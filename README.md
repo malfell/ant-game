@@ -28,6 +28,7 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
     being able to move.
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
 [] Canvas size slightly changes when you go between game, start, and instructions. I'm confused on that one because when I made everything the same size, it was off. So I ended up changing sizes individually to make them closer. 
+[] Game continues to run after Game Over. If you click on play again or return to main menu, game will continue from where you left off. I took out out the play again button until I solve this. The return to main menu button will reload the whole page. Not the solution I wanted, but that's what I have for now.  
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 

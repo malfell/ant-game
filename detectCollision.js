@@ -26,15 +26,23 @@ function gameOver(){
     gameOverScreen.style.display = 'block';
 
     //lets user play again
-    playAgain.addEventListener('click', function(){
-        wrapper.style.display = 'block';
-        gameOverScreen.style.display = 'none';
-    })
+    //Need to find another method for restarting the game
+    //This just covers and uncovers the screen basically
+    // playAgain.addEventListener('click', function(){
+    //     wrapper.style.display = 'block';
+    //     gameOverScreen.style.display = 'none';
+
+    // })
 
     //lets user return to main menu
     goBack.addEventListener('click', function(){
         start.style.display = 'block';
         gameOverScreen.style.display = 'none';
+        //reloads the page to return to main menu
+        //Otherwise, the game will still be playing
+        //Will need to come back to this and get a way
+        //for the gameStart() function to actually restart.
+        location.reload();
     })
 
 

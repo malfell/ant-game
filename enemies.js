@@ -83,6 +83,7 @@ function initEnemies(){
         enemiesArray.push(new Enemy(x, canvas.height - grid, grid - 40, grid - 40, 4, 'spider'));
     }
 }
+
 initEnemies();
 
 // Make enemies move up/down and right/left too?

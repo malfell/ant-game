@@ -25,17 +25,14 @@ const ctx4 = canvas4.getContext('2d');
 canvas4.width = 800;
 canvas4.height = 600;
 
-//Might be unneeded? Unless for game over screen?
-// const canvas5 = document.getElementById('canvas5');
-// const ctx5 = canvas5.getContext('2d');
-// canvas5.width = 800;
-// canvas5.height = 600;
-
 //global variables
 //grid is 80 pixels, accounts for movement at a time
 const grid = 80;
 let keys = [];
 let score = 0;
+
+//should be a variable to restart game???
+let restartGame = false;
 
 //movement speed for enemies
 let gameSpeed = 1;
