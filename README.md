@@ -35,8 +35,10 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 [] Game background could use work. I'd rather not have the single color background. 
 [] On the Winner screen, clicking back to menu button crashes the browser for some reason. I took out the button for now. 
 []If player dies many times in a row, the page will flicker between screens before returning to the home page. 
+[]If player sits on the Game Over screen for a while, the game will either sometimes keep running or you start off from where you left off the next time you start from the main menu.
 []If player is moving and right clicks on the screen at the same time, the ant will start drifting. 
 []Sometimes enemies spawn too close to the player's starting position.
+[]In one game, player started from the upper right corner.
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 
