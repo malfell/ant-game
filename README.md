@@ -25,7 +25,7 @@ If you're hit by a spider, you die (and lose).
 Just JavaScript, CSS, and HTML? Is that what this is asking?
 
 -------------CURRENT ISSUES------------------
-[] If player presses a new arrow key while still holding down the last arrow key, the ant will freeze for a bit before being able to move. Pressing any key while moving will freeze the and for a moment. The ant stops moving whenever any key on the keyboard is released, regardless of what key it is.
+[] If player presses a new arrow key while still holding down the last arrow key, the ant will freeze for a bit before being able to move. Pressing any key while moving will freeze the ant for a moment. The ant stops moving whenever any key on the keyboard is released, regardless of what key it is.
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
 [] Canvas size slightly changes when you go between game, start, and instructions. I'm confused on that one because when I made everything the same size, it was off. So I ended up changing sizes individually to make them closer. 
 [] Game continues to run after Game Over. If you click on play again or return to main menu, game will continue from where you left off. I took out the play again button until I solve this. The return to main menu button will reload the whole page. Not the solution I wanted, but that's what I have for now.  
@@ -35,10 +35,12 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 [] Game background could use work. I'd rather not have the single color background. 
 [] On the Winner screen, clicking back to menu button crashes the browser for some reason. I took out the button for now. 
 []If player dies many times in a row, the page will flicker between screens before returning to the home page. 
+[]If player stays on the Game Over screen for a minute or so, and then return to the main menu button and click play, the screen with flash to where the player last left off in the game before returning to the main menu. I was having issues getting the game to restart properly. 
 []If player sits on the Game Over screen for a while, the game will either sometimes keep running or you start off from where you left off the next time you start from the main menu.
 []If player is moving and right clicks on the screen at the same time, the ant will start drifting. 
 []Sometimes enemies spawn too close to the player's starting position.
 []In one game, player started from the upper right corner.
+[]The main menu buttons bounce a little when player first loads the game or hits "back to main menu" on the Game Over screen.
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 
