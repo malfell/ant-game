@@ -47,6 +47,7 @@ class Ant {
         //y position is greater than 0
         } if(this.direction === 'up' && this.y > 0){
             this.y-=4;
+
         //ant can move down as long as its
         //y position is less than 570
         } if(this.direction === 'down' && this.y < 570){

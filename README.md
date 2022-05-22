@@ -36,3 +36,17 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 
+[] Dangerous Terrain
+[] Different enemies and different movement paths
+    -Shadow of a bird appears, and there's a time limit where ant needs to find
+    cover before the bird gets them.
+    -Spider on a web? Ant needs to avoid the spider webs. Avoid spider shadows.
+    -Beetles or other bugs are walking around and have the red eye vision code where ant needs to avoid getting hit with the red cone because that means ant is caught.
+    -Fire ants? Enemy ants?
+[] Different levels
+    -Ant could have levels inside a house and need to avoid people and ant traps.
+    -Larger levels? Larger levels could involve safe zones. 
+[] Lives
+    -The user could have a row of ants walking together. When an enemy eats an ant, or the leading ant falls into dangerous terrain, then the leader dies, and the next ant must lead. So the ants are like "lives."
+[] Two ant or ant groups at once?
+    -Could allow for a second player to use the same keyboard or let the initial have an extra challenge. One ant group is controlled with WASD and the other ant group is controlled with the arrow keys. 
