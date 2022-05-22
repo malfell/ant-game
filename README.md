@@ -29,6 +29,10 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
 [] Canvas size slightly changes when you go between game, start, and instructions. I'm confused on that one because when I made everything the same size, it was off. So I ended up changing sizes individually to make them closer. 
 [] Game continues to run after Game Over. If you click on play again or return to main menu, game will continue from where you left off. I took out out the play again button until I solve this. The return to main menu button will reload the whole page. Not the solution I wanted, but that's what I have for now.  
+[] There is an issue getting the game to restart properly. At the moment, I removed the "Play Again" button, and made the "Return to Menu" button reload the page. Not convenient but a slight temporarily solution.
+[] There are no spiders or enemies. Just blocks. I haven't had time to make spider sprites.
+[] The ant sprite used to be animated, but there was an issue when changing the code. I need to go back and rework this.
+[] Game background could use work. I'd rather not have the single color background. 
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 

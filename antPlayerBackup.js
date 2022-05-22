@@ -38,19 +38,19 @@ class Ant {
         //ant can move left as long as its
         //x position is greater than 0
         if(this.direction === 'left' && this.x > 0){
-            this.x-=3;
+            this.x-=4;
         //ant can move right as long as its
         //x position is less than 780
         } if(this.direction === 'right' && this.x < 780){
-            this.x+=3;
+            this.x+=4;
         //ant can move up as long as its
         //y position is greater than 0
         } if(this.direction === 'up' && this.y > 0){
-            this.y-=3;
+            this.y-=4;
         //ant can move down as long as its
         //y position is less than 570
         } if(this.direction === 'down' && this.y < 570){
-            this.y+=3;
+            this.y+=4;
         }
     }   
     

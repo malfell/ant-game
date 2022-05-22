@@ -35,8 +35,7 @@ class Anthill {
         // ctx2.fillText(homeMessage, 300, 40);
 
            if(collision(antPC, anthill)){
-            console.log('home!');
-            // alert('Win!')
+            winGame();
         } 
         }
         
@@ -59,3 +58,21 @@ function handleAnthill(){
 
 //creates new anthill
 const anthill = new Anthill;
+
+//Winner screen!
+function winGame(){
+    let win = document.getElementById('winner');
+    let wrapper = document.querySelector('.wrapper');
+    //switches to Winner screen screen
+    wrapper.style.display = 'none';
+    win.style.display = 'block';
+
+    let goBackButton4 = document.getElementById('goBack4');
+    goBackButton4.addEventListener('click', function(){
+        start.style.display = 'block';
+        issues.style.display = 'none';
+        //not best method for going back. Fix if there's time.
+        location.reload();
+    })
+}
+

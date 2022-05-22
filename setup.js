@@ -31,15 +31,11 @@ const grid = 80;
 let keys = [];
 let score = 0;
 
-//should be a variable to restart game???
-let restartGame = false;
-
 //movement speed for enemies
 let gameSpeed = 1;
 
 const enemiesArray = [];
 const foodArray = [];
-
 
 //creating initial images and changing src name to something shorter
 //ant sprite

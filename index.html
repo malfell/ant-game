@@ -60,6 +60,7 @@
         <button type="button" class="goBack" id="goBack1">Return to Main Menu</button>
     </info>
 
+    <!-- KNOWN ISSUES -->
     <info id="issues" style="display:none">
         <h2>Known Issues</h2>
         <ul>
@@ -79,6 +80,15 @@
                 I took out out the play again button until I solve this. 
                 The return to main menu button will reload the whole page. 
                 Not the solution I wanted, but that's what I have for now. </li>
+            <li>There is an issue getting the game to restart properly. 
+                At the moment, I removed the "Play Again" button, and made the 
+                "Return to Menu" button reload the page. Not convenient but a 
+                slight temporarily solution.</li>
+            <li>There are no spiders or enemies. Just blocks. 
+                I haven't had time to make spider sprites. </li>
+            <li>The ant sprite used to be animated, but there was an 
+                issue when changing the code. I need to go back and rework this.</li>
+            <li>Game background could use work. I'd rather not have the single color background.</li>
         </ul>
         <button type="button" class="goBack" id="goBack2">Return to Main Menu</button>
     </info>
@@ -92,6 +102,14 @@
         <!-- <button type="button" id="playAgainButton">Play Again?</button> -->
         <button type="button" class="goBack" id="goBack3">Return to Main Menu</button>
 
+    </game>
+
+    <!-- WINNER SCREEN -->
+    <game id="winner" style="display:none">
+        <h1>You Win!</h1>
+        <p id="winText">Your ant colony has accepted you again.</p>
+        <p id="winTextSmaller">Don't screw this up now.</p>
+        <button type="button" class="goBack" id="goBack4">Return to Main Menu</button>
     </game>
 
     <game class="wrapper" style="display:none">
