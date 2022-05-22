@@ -33,6 +33,7 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 [] There are no spiders or enemies. Just blocks. I haven't had time to make spider sprites.
 [] The ant sprite used to be animated, but there was an issue when changing the code. I need to go back and rework this.
 [] Game background could use work. I'd rather not have the single color background. 
+[] On the Winner screen, clicking back to menu button crashes the browser for some reason. I took out the button for now. 
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 

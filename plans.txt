@@ -133,7 +133,7 @@ http://img0.joyreactor.com/pics/post/how-ant-walk-gif-1181931.gif
 [X] When a player wins or loses, the game status and/or score should display 
     visually to the player in a way that does not rely on console.logs or alerts
 [X] HTML, CSS, and JavaScript should live in separate files
-[] Effort must be spent on styling and appearance
+[?] Effort must be spent on styling and appearance
 [X] The HTML code should use sematic tags 
     - https://www.w3schools.com/html/html5_semantic_elements.asp
 [X] The game should have a Readme.md file in the GitHub repository 

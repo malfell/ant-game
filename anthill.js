@@ -67,12 +67,13 @@ function winGame(){
     wrapper.style.display = 'none';
     win.style.display = 'block';
 
-    let goBackButton4 = document.getElementById('goBack4');
-    goBackButton4.addEventListener('click', function(){
-        start.style.display = 'block';
-        issues.style.display = 'none';
-        //not best method for going back. Fix if there's time.
-        location.reload();
-    })
+    //clicking this button kinda crashes the game...
+    // let goBackButton4 = document.getElementById('goBack4');
+    // goBackButton4.addEventListener('click', function(){
+    //     start.style.display = 'block';
+    //     issues.style.display = 'none';
+    //     //not best method for going back. Fix if there's time.
+    //     location.reload();
+    // })
 }
 

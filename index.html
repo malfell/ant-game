@@ -26,6 +26,12 @@
     <!-- Added Proggy Clean font -->
     <!-- https://www.cdnfonts.com/proggy-clean.font -->
     <link href="http://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">
+
+    <!-- Got a font from Google Fonts -->
+    <!-- https://fonts.google.com/specimen/VT323#standard-styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -90,6 +96,8 @@
             <li>The ant sprite used to be animated, but there was an 
                 issue when changing the code. I need to go back and rework this.</li>
             <li>Game background could use work. I'd rather not have the single color background.</li>
+            <li>On the Winner screen, clicking back to menu button crashes the browser 
+                for some reason. I took out the button for now. </li>
         </ul>
         <button type="button" class="goBack" id="goBack2">Return to Main Menu</button>
     </info>
@@ -110,7 +118,8 @@
         <h1>You Win!</h1>
         <p class="pixText">Your ant colony has accepted you again.</p>
         <p class="pixTextSmaller">Don't screw this up now.</p>
-        <button type="button" class="goBack" id="goBack4">Return to Main Menu</button>
+        <!-- Removed for now because it is crashing the game -->
+        <!-- <button type="button" class="goBack" id="goBack4">Return to Main Menu</button> -->
     </game>
 
     <game class="wrapper" style="display:none">
