@@ -69,7 +69,7 @@ to the .wrapper class, but they were STILL inconsistent? */
     height: 600px;
     transform: translate(-50%, -50%);
     /* Make a sprite background later */
-    background-color: rgb(97, 156, 113);
+    background-color: rgb(73, 142, 92);
 }
 
 /* Positions canvas in the center middle */

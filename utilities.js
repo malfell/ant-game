@@ -63,6 +63,5 @@ issuesButton.addEventListener('click', function(){
         start.style.display = 'block';
         issues.style.display = 'none';
     })
-
 })
 
