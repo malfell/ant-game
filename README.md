@@ -34,6 +34,7 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 [] The ant sprite used to be animated, but there was an issue when changing the code. I need to go back and rework this.
 [] Game background could use work. I'd rather not have the single color background. 
 [] On the Winner screen, clicking back to menu button crashes the browser for some reason. I took out the button for now. 
+[]If player dies many times in a row, the page will flicker between screens before returning to the home page. 
 
 -----UNFINISHED FUNCTIONALITY----------------
 Most of the unfinished functionality is in plans.txt 
