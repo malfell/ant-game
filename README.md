@@ -26,6 +26,7 @@ Just JavaScript, CSS, and HTML? Is that what this is asking?
 
 -------------CURRENT ISSUES------------------
 [] If player presses a new arrow key while still holding down the last arrow key, the ant will freeze for a bit before being able to move. Pressing any key while moving will freeze the ant for a moment. The ant stops moving whenever any key on the keyboard is released, regardless of what key it is.
+
 [] Food can currently spawn on the ant hill. Shouldn't do that. 
 [] Canvas size slightly changes when you go between game, start, and instructions. I'm confused on that one because when I made everything the same size, it was off. So I ended up changing sizes individually to make them closer. 
 [] Game continues to run after Game Over. If you click on play again or return to main menu, game will continue from where you left off. I took out the play again button until I solve this. The return to main menu button will reload the whole page. Not the solution I wanted, but that's what I have for now.  
