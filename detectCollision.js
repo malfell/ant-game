@@ -25,6 +25,9 @@ function gameOver(){
     //switches to Game Over screen
     wrapper.style.display = 'none';
     gameOverScreen.style.display = 'block';
+    //sets gameRestart variable to true, which restarts gameStart()
+    //function in utilities
+    // gameRestart = true;
 
     //lets user play again
     //Need to find another method for restarting the game

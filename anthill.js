@@ -66,6 +66,8 @@ function winGame(){
     //switches to Winner screen screen
     wrapper.style.display = 'none';
     win.style.display = 'block';
+    //sets gameRestart to true to end the gameStart() function
+    gameRestart = true;
 
     //clicking this button kinda crashes the game...
     // let goBackButton4 = document.getElementById('goBack4');

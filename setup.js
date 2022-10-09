@@ -37,6 +37,11 @@ let gameSpeed = 1;
 const enemiesArray = [];
 const foodArray = [];
 
+//sets gameRestart variable to false
+//when gameRestart variable is true, the gameStart function
+//will be set to "return" and stop the function.
+let gameRestart = false;
+
 //creating initial images and changing src name to something shorter
 //ant sprite
 const antSprite = new Image();
