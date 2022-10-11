@@ -1,0 +1,25 @@
+// Mixin for pixelated game text
+// There's three slightly different variants for that text
+@mixin set-pix-text($align, $font-size){
+    text-align: $align;
+    font-size: $font-size;
+    font-family: $primary-font;
+    margin: 1em;
+    text-indent: 0;
+}
+
+// sets game window because they're mostly all the same except
+// for minor differences. I still haven't figured out why, but when the game windows
+// are the same size, they don't overlap correctly? 
+@mixin set-game-window(){
+    border: $border;
+    // except main-menu needs 48% manually
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
