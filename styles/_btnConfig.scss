@@ -14,11 +14,14 @@ button {
 
 #infoButton {
     margin-bottom: 0.5em;
-    &:hover{
+    &:hover {
         background-color: $primary-hoverBtn;
     }
 }
 
-.goBack:hover, #issuesButton:hover{
-    background-color: $primary-hoverBtn;
+.goBack, #issuesButton {
+    &:hover {
+        background-color: $primary-hoverBtn;
+    }
 }
+    

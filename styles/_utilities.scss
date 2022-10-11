@@ -40,7 +40,7 @@
 
 // ________________________________________________
 // FUNCTIONS
-// I know these are some dumb and useless functions, but I haven't had enough time to
+// I know this is a dumb and useless function, but I haven't had enough time to
 // improve this game enough to maybe have decent functions in it. 
 
 // So I'm just trying to meet the requirements and show that I have 
@@ -49,11 +49,14 @@
 // This function changes the border size and keeps the rest of the border
 // styling like "solid black"
 @function border-size($num){
-    // makes a new border and adds the given number to 0px
-        // has to be 0px. Just adding to the number to 'px' does not work. 
-    // got a math operator in here too, yay
+    // checks number for border width--should be greater than 0
+    @if $num <= 0 {
+        @error "Border width must be greater than 0" 
+    } @else {
     $newBorder: $num + 0px solid black; 
     @return $newBorder;
-
-
+    }
+    // makes a new border and adds the given number to 0px
+    // has to be 0px. Just adding to the number to 'px' does not work. 
+    // got a math operator in here too, yay
 }

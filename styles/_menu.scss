@@ -5,6 +5,7 @@
     width: 761px;
     height: 587px;
     background-color: $primary-color;
+    @debug "The color is: #{$primary-color}";
     .pixTextSmall{
         @include set-pix-text(center, 1);
     }

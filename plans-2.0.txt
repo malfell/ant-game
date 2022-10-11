@@ -1,22 +1,22 @@
 ---------------ACCEPTANCE CRITERIA FOR SCSS-----------------
 When looking at the SCSS file, it should successfully incorporate the following:
 [10/10] 10-15 SCSS variables
-[5/10] 10-15 nested selectors, 
+[6/10] 10-15 nested selectors, 
     [3/2] with at least 2 uses of the SCSS ampersand (&)
 [3/3] 3-5 SCSS mixins
-[] 2-4 SCSS functions
-[] 2-4 instances of SCSS flow control directives or operators
+[1/2] 2-4 SCSS functions
+[2/2] 2-4 instances of SCSS flow control directives or operators
 [5/3] 3-5 SCSS partial files, imported
-[] One of the SCSS error-handling directives
-[] When SCSS compiles to CSS, there are no errors in the console.
-[X] Styling has been completed using SCSS only.
+[x] One of the SCSS error-handling directives
+[x] When SCSS compiles to CSS, there are no errors in the console.
+[x] Styling has been completed using SCSS only.
 
 ---------------NEW STUFF------------
 [] Actually make a map like in the Pokemon game tutorial 
     [] Make collision detection work like that game too 
     [] And player sprite adjustment
     [] Let anthill have top layer so ant can go behind it  
-[] Spider sprites? MAYBE. If there's time. 
+[x] Spider sprites? MAYBE. If there's time. They don't have to be animated yet.
 [] Is there a better way to rework the window screens? 
     Would a React app or something work better? 
 [] Make a changelog page?
