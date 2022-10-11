@@ -63,10 +63,24 @@ button {
   background-color: rgb(197, 173, 128);
   /* Styling for known issues */
 }
+#instructions #issueList, #issues #issueList {
+  height: 400px;
+  overflow: auto;
+  margin: 1em;
+}
 #instructions ul, #issues ul {
   text-align: left;
-  font-size: 0.9em;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 1em;
+  list-style: none;
+}
+#instructions li, #issues li {
+  border: 1px solid black;
+  background-color: rgb(156, 135, 97);
+  padding: 1em;
+}
+#instructions li:nth-child(even), #issues li:nth-child(even) {
+  background-color: rgb(230, 198, 139);
 }
 #instructions #smaller, #issues #smaller {
   font-size: 1em;

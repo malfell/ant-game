@@ -72,44 +72,47 @@
     <!-- KNOWN ISSUES -->
     <info id="issues" style="display:none">
         <h2>Known Issues</h2>
-        <ul>
-            <li>If player presses a new arrow key while still 
-                holding down the last arrow key, the ant will 
-                freeze for a bit before being able to move.
-                Pressing any key while moving will freeze the
-                ant for a moment. The ant stops moving whenever 
-                any key on the keyboard is 
-                released, regardless of what key it is.</li>
-            <li>Food can currently spawn on the ant hill. 
-                Shouldn't do that. </li>
-            <li>Canvas size slightly changes when you go between 
-                game, start, and instructions. I'm confused on that 
-                one because when I made everything the same size, 
-                it was off. So I ended up changing sizes 
-                individually to make them closer. </li>
-            <li>Game continues to run after Game Over. 
-                If you click on play again or return to main menu, 
-                game will continue from where you left off. 
-                I took out the play again button until I solve this. 
-                The return to main menu button will reload the whole page. 
-                Not the solution I wanted, but that's what I have for now. </li>
-            <li>There is an issue getting the game to restart properly. 
-                At the moment, I removed the "Play Again" button, and made the 
-                "Return to Menu" button reload the page. Not convenient but a 
-                slight temporary solution.</li>
-            <li>There are no spiders or enemies. Just blocks. 
-                I haven't had time to make spider sprites. </li>
-            <li>The ant sprite used to be animated, but there was an 
-                issue when changing the code. I need to go back and rework this.</li>
-            <li>Game background could use work. I'd rather not have the single color background.</li>
-            <li>On the Winner screen, clicking back to menu button crashes the browser 
-                for some reason. I took out the button for now. You'll have to refresh
-                the page. </li>
-            <li>If player dies many times in a row, the page will flicker between screens 
-                before returning to the home page. </li>
-            <li>If player is moving and right clicks on the screen at the same time, the ant will start drifting. </li>
-            <li>Sometimes enemies spawn too close to the player's starting position.</li>
-        </ul>
+        <div id="issueList">
+            <ul>
+                <li>If player presses a new arrow key while still 
+                    holding down the last arrow key, the ant will 
+                    freeze for a bit before being able to move.
+                    Pressing any key while moving will freeze the
+                    ant for a moment. The ant stops moving whenever 
+                    any key on the keyboard is 
+                    released, regardless of what key it is.</li>
+                <li>Food can currently spawn on the ant hill. 
+                    Shouldn't do that. </li>
+                <li>Canvas size slightly changes when you go between 
+                    game, start, and instructions. I'm confused on that 
+                    one because when I made everything the same size, 
+                    it was off. So I ended up changing sizes 
+                    individually to make them closer. </li>
+                <li>Game continues to run after Game Over. 
+                    If you click on play again or return to main menu, 
+                    game will continue from where you left off. 
+                    I took out the play again button until I solve this. 
+                    The return to main menu button will reload the whole page. 
+                    Not the solution I wanted, but that's what I have for now. </li>
+                <li>There is an issue getting the game to restart properly. 
+                    At the moment, I removed the "Play Again" button, and made the 
+                    "Return to Menu" button reload the page. Not convenient but a 
+                    slight temporary solution.</li>
+                <li>There are no spiders or enemies. Just blocks. 
+                    I haven't had time to make spider sprites. </li>
+                <li>The ant sprite used to be animated, but there was an 
+                    issue when changing the code. I need to go back and rework this.</li>
+                <li>Game background could use work. I'd rather not have the single color background.</li>
+                <li>On the Winner screen, clicking back to menu button crashes the browser 
+                    for some reason. I took out the button for now. You'll have to refresh
+                    the page. </li>
+                <li>If player dies many times in a row, the page will flicker between screens 
+                    before returning to the home page. </li>
+                <li>If player is moving and right clicks on the screen at the same time, the ant will start drifting. </li>
+                <li>Sometimes enemies spawn too close to the player's starting position.</li>
+            </ul>
+        </div>
+        
         <button type="button" class="goBack" id="goBack2">Return to Main Menu</button>
     </info>
 

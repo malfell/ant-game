@@ -1,13 +1,6 @@
 /* Button Styling */
 button {
-    border-radius: 20px;
-    width: 15em;
-    padding: 0.5em;
-    margin: auto;
-    font-family: $primary-font;
-    font-size: 2em;
-    /* Duration to change color on hover */
-    transition-duration: 0.7s;                                       
+    @include set_btn_style();                                    
 }
 
 // the play again is technically hidden because it was having issues

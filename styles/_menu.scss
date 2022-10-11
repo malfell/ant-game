@@ -12,17 +12,32 @@
 }
 
 /* centers instructions and issues kinda*/
-#instructions, #issues{
+#instructions, #issues {
     @include set-game-window();
     height: 585px;
     background-color: $primary-color;
+    #issueList {
+        height: 400px;
+        overflow: auto;
+        margin: 1em;
+    }
     /* Styling for known issues */
     ul {
         text-align: left;
-        font-size: 0.9em;
         font-family: $secondary-font;
-
+        margin: 1em;
+        list-style: none;
     }
+
+    li {
+        border: border-size(1);
+        background-color: $quaternary-color;
+        padding: 1em;
+        &:nth-child(even) {
+            background-color: $quinary-color;
+        }
+    }
+
     #smaller {
         font-size: 1em;
         text-decoration: line-through;
