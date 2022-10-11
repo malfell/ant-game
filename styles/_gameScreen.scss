@@ -1,0 +1,34 @@
+/* centers game-over*/
+#game-over{
+    @include set-game-window();
+    height: 591px;
+    background-color: $tertiary-color;
+}
+
+#winner{
+    @include set-game-window();
+    height: 600px;
+    background-color: $primary-color;
+    .pixText {
+        @include set-pix-text(left, 3);
+    }
+    .pixTextSmaller {
+        @include set-pix-text(left, 2);
+        text-decoration: line-through;
+    }
+}
+
+/* There's an issue where the game start menu and instructions
+won't center properly and be consistent sizes? I had 
+originally copied all the info from .wrapper and it didn't work.
+I also tried all the info from canvas, and it was still
+inconsistent. I also added #main-menu and #instructions
+to the .wrapper class, but they were STILL inconsistent? */
+
+/* Window where game will be played */
+.wrapper {
+    @include set-game-window();
+    height: 600px;
+    /* Make a sprite background later */
+    background-color: $secondary-color;
+}

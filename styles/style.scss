@@ -1,6 +1,9 @@
 // imports
 @import 'config';
 @import 'utilities';
+@import 'btnConfig';
+@import 'menu';
+@import 'gameScreen';
 
 /* Positions canvas in the center middle */
 canvas {
@@ -11,61 +14,27 @@ canvas {
     height: 100%;
 }
 
-/* Centers main menu window over the game window */
-#main-menu{
-    @include set-game-window();
-    top: 48%;
-    width: 761px;
-    height: 587px;
-    background-color: $primary-color;
+h1 {
+    text-align: center;
+    font-family: $primary-font;
+    font-size: 4em; 
 }
 
-/* centers instructions and issues kinda*/
-#instructions, #issues{
-    @include set-game-window();
-    height: 585px;
-    background-color: $primary-color;
+h2 {
+    text-align: center;
+    font-family: $primary-font;
+    font-size: 1.5;
+    margin: 1em;
 }
 
-/* centers game-over*/
-#game-over{
-    @include set-game-window();
-    height: 591px;
-    background-color: $tertiary-color;
-}
+/* Paragraph styling */
+p {
+    text-align: left;
+    font-family: $secondary-font;
+    font-size: 1.3em;
+    margin: auto;
+    padding: 0.5em;
+    /* Indents each line of paragraph */
+    text-indent: 1.5em;
+   }
 
-#winner{
-    @include set-game-window();
-    height: 600px;
-    background-color: $primary-color;
-}
-
-/* There's an issue where the game start menu and instructions
-won't center properly and be consistent sizes? I had 
-originally copied all the info from .wrapper and it didn't work.
-I also tried all the info from canvas, and it was still
-inconsistent. I also added #main-menu and #instructions
-to the .wrapper class, but they were STILL inconsistent? */
-
-/* Window where game will be played */
-.wrapper {
-    @include set-game-window();
-    height: 600px;
-    /* Make a sprite background later */
-    background-color: $secondary-color;
-}
-
-
-
-.pixText {
-    @include set-pix-text(left, 3);
-}
-
-.pixTextSmall{
-    @include set-pix-text(center, 1);
-}
-
-.pixTextSmaller {
-    @include set-pix-text(left, 2);
-    text-decoration: line-through;
-}

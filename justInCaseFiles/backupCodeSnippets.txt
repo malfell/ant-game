@@ -262,3 +262,8 @@ window.addEventListener('keyup', function(e){
             }
 
     }
+
+
+        <!-- Added Proggy Clean font -->
+    <!-- https://www.cdnfonts.com/proggy-clean.font -->
+    <link href="http://fonts.cdnfonts.com/css/proggy-clean" rel="stylesheet">

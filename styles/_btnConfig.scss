@@ -1,0 +1,31 @@
+/* Button Styling */
+button {
+    border-radius: 20px;
+    width: 15em;
+    padding: 0.5em;
+    margin: auto;
+    font-family: $primary-font;
+    font-size: 2em;
+    /* Duration to change color on hover */
+    transition-duration: 0.7s;                                       
+}
+
+// the play again is technically hidden because it was having issues
+// when I first started this project, and I haven't fixed it yet
+#startButton, #playAgainButton {
+    margin-bottom: 0.5em;
+    &:hover{
+        background-color: $secondary-hoverBtn;
+    }
+}
+
+#infoButton {
+    margin-bottom: 0.5em;
+    &:hover{
+        background-color: $primary-hoverBtn;
+    }
+}
+
+.goBack:hover, #issuesButton:hover{
+    background-color: $primary-hoverBtn;
+}

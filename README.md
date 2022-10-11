@@ -21,7 +21,7 @@ Touch the anthill with the ant player to return home and win.
 
 If you're hit by a spider, you die (and lose).
 
---------TECHNOLOGIES-------------------
+## TECHNOLOGIES
 Just JavaScript, CSS, and HTML? Is that what this is asking?
 
 ## CURRENT ISSUES

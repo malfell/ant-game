@@ -1,10 +1,31 @@
-/* Positions canvas in the center middle */
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+/* Button Styling */
+button {
+  border-radius: 20px;
+  width: 15em;
+  padding: 0.5em;
+  margin: auto;
+  font-family: "VT323", monospace;
+  font-size: 2em;
+  /* Duration to change color on hover */
+  transition-duration: 0.7s;
+}
+
+#startButton, #playAgainButton {
+  margin-bottom: 0.5em;
+}
+#startButton:hover, #playAgainButton:hover {
+  background-color: #63c166;
+}
+
+#infoButton {
+  margin-bottom: 0.5em;
+}
+#infoButton:hover {
+  background-color: #97a2dc;
+}
+
+.goBack:hover, #issuesButton:hover {
+  background-color: #97a2dc;
 }
 
 /* Centers main menu window over the game window */
@@ -21,6 +42,13 @@ canvas {
   height: 587px;
   background-color: rgb(197, 173, 128);
 }
+#main-menu .pixTextSmall {
+  text-align: center;
+  font-size: 1;
+  font-family: "VT323", monospace;
+  margin: 1em;
+  text-indent: 0;
+}
 
 /* centers instructions and issues kinda*/
 #instructions, #issues {
@@ -33,6 +61,16 @@ canvas {
   text-align: center;
   height: 585px;
   background-color: rgb(197, 173, 128);
+  /* Styling for known issues */
+}
+#instructions ul, #issues ul {
+  text-align: left;
+  font-size: 0.9em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#instructions #smaller, #issues #smaller {
+  font-size: 1em;
+  text-decoration: line-through;
 }
 
 /* centers game-over*/
@@ -59,6 +97,21 @@ canvas {
   height: 600px;
   background-color: rgb(197, 173, 128);
 }
+#winner .pixText {
+  text-align: left;
+  font-size: 3;
+  font-family: "VT323", monospace;
+  margin: 1em;
+  text-indent: 0;
+}
+#winner .pixTextSmaller {
+  text-align: left;
+  font-size: 2;
+  font-family: "VT323", monospace;
+  margin: 1em;
+  text-indent: 0;
+  text-decoration: line-through;
+}
 
 /* There's an issue where the game start menu and instructions
 won't center properly and be consistent sizes? I had 
@@ -80,27 +133,35 @@ to the .wrapper class, but they were STILL inconsistent? */
   background-color: rgb(73, 142, 92);
 }
 
-.pixText {
-  text-align: left;
-  font-size: 3;
-  font-family: "VT323", monospace;
-  margin: 1em;
-  text-indent: 0;
+/* Positions canvas in the center middle */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.pixTextSmall {
+h1 {
   text-align: center;
-  font-size: 1;
   font-family: "VT323", monospace;
-  margin: 1em;
-  text-indent: 0;
+  font-size: 4em;
 }
 
-.pixTextSmaller {
-  text-align: left;
-  font-size: 2;
+h2 {
+  text-align: center;
   font-family: "VT323", monospace;
+  font-size: 1.5;
   margin: 1em;
-  text-indent: 0;
-  text-decoration: line-through;
+}
+
+/* Paragraph styling */
+p {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3em;
+  margin: auto;
+  padding: 0.5em;
+  /* Indents each line of paragraph */
+  text-indent: 1.5em;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+/* Centers main menu window over the game window */
+#main-menu{
+    @include set-game-window();
+    top: 48%;
+    width: 761px;
+    height: 587px;
+    background-color: $primary-color;
+    .pixTextSmall{
+        @include set-pix-text(center, 1);
+    }
+
+}
+
+/* centers instructions and issues kinda*/
+#instructions, #issues{
+    @include set-game-window();
+    height: 585px;
+    background-color: $primary-color;
+    /* Styling for known issues */
+    ul {
+        text-align: left;
+        font-size: 0.9em;
+        font-family: $secondary-font;
+
+    }
+    #smaller {
+        font-size: 1em;
+        text-decoration: line-through;
+    }
+}
