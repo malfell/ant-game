@@ -1,6 +1,7 @@
 // collision detection between two rectangles
 //function must return true or false
-function collision(first: any, second: any){
+// What should these anys be?????
+function collision(first: any, second: any): boolean{
     //exclamation mark operator returns the opposite
     //if any statement is true, then function will just
     //return true. So collision function needs to return
@@ -18,10 +19,10 @@ function gameOver(){
     //game over variables
     //need to fix playAgain button
     // let playAgain = document.getElementById('playAgainButton');
-    let goBack: any = document.getElementById('goBack3');
-    let gameOverScreen: any = document.getElementById('game-over');
-    let wrapper: any = document.querySelector('.wrapper');
-    let start: any = document.getElementById('main-menu');
+    let goBack = document.getElementById('goBack3') as HTMLButtonElement;
+    let gameOverScreen = document.getElementById('game-over') as HTMLDivElement;
+    let wrapper = document.querySelector('.wrapper') as HTMLDivElement;
+    let start = document.getElementById('main-menu') as HTMLDivElement;
     //switches to Game Over screen
     wrapper.style.display = 'none';
     gameOverScreen.style.display = 'block';
