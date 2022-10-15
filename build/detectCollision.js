@@ -1,6 +1,7 @@
 "use strict";
 // collision detection between two rectangles
 //function must return true or false
+// What should these anys be?????
 function collision(first, second) {
     //exclamation mark operator returns the opposite
     //if any statement is true, then function will just
