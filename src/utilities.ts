@@ -32,14 +32,14 @@ function gameStart(){
 
 
 //all screen variables for switching screens
-let start: any = document.getElementById('main-menu');
-let wrapper: any = document.querySelector('.wrapper');
-let info: any = document.getElementById('instructions');
-let issues: any = document.getElementById('issues');
+let start = document.getElementById('main-menu') as HTMLDivElement;
+let wrapper = document.querySelector('.wrapper') as HTMLDivElement;
+let info = document.getElementById('instructions') as HTMLDivElement;
+let issues = document.getElementById('issues') as HTMLDivElement;
 
 
 // Button event to start the game
-let startButton: any = document.getElementById('startButton');
+let startButton = document.getElementById('startButton') as HTMLButtonElement;
 startButton.addEventListener('click', function(){
     start.style.display = 'none';
     wrapper.style.display = 'block';
@@ -50,11 +50,11 @@ startButton.addEventListener('click', function(){
 })
 
 //Button for instructions
-let infoButton: any = document.getElementById('infoButton');
+let infoButton = document.getElementById('infoButton') as HTMLButtonElement;
 infoButton.addEventListener('click', function(){
     start.style.display = 'none';
     info.style.display = 'block';
-    let goBackButton1: any = document.getElementById('goBack1');
+    let goBackButton1 = document.getElementById('goBack1') as HTMLButtonElement;
     goBackButton1.addEventListener('click', function(){
         start.style.display = 'block';
         info.style.display = 'none';
@@ -63,7 +63,7 @@ infoButton.addEventListener('click', function(){
 })
 
 //Button for known issues
-let issuesButton: any = document.getElementById('issuesButton');
+let issuesButton = document.getElementById('issuesButton') as HTMLButtonElement;
 issuesButton.addEventListener('click', function(){
     start.style.display = 'none';
     issues.style.display = 'block';
@@ -71,7 +71,7 @@ issuesButton.addEventListener('click', function(){
     //work for the same button, like maybe using forEach() from
     //what I vaguely Googled. I'm just not having enough time
     //so I'm going for what is functional.
-    let goBackButton2: any = document.getElementById('goBack2');
+    let goBackButton2 = document.getElementById('goBack2') as HTMLButtonElement;
     goBackButton2.addEventListener('click', function(){
         start.style.display = 'block';
         issues.style.display = 'none';
