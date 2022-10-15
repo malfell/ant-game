@@ -1,6 +1,14 @@
 // Ant goes on layer 3
 
 class Ant {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    moving: boolean;
+    direction: unknown;
+    framex: number;
+    framey: number;
     constructor(){
         // Initial position for the ant
         this.x = 420;
@@ -58,7 +66,7 @@ class Ant {
 }
 
 //keyboard controls
-function movePlayer(player){
+function movePlayer(player: Ant){
     document.addEventListener('keydown', function(e){
     //just to prevent the keys from doing
     //anything else, like scrolling the page down

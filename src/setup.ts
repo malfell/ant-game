@@ -1,26 +1,26 @@
 //setting up canvas
 
 //background layer
-const canvas = document.getElementById('canvas1');
+const canvas: any = document.getElementById('canvas1');
 const ctx1 = canvas.getContext('2d');
 
 canvas.width = 800;
 canvas.height = 600;
 
 //ant sprite layer
-const canvas2 = document.getElementById('canvas2');
+const canvas2: any = document.getElementById('canvas2');
 const ctx2 = canvas2.getContext('2d');
 canvas2.width = 800;
 canvas2.height = 600;
 
 //anthill & food layer
-const canvas3 = document.getElementById('canvas3');
+const canvas3: any = document.getElementById('canvas3');
 const ctx3 = canvas3.getContext('2d');
 canvas3.width = 800;
 canvas3.height = 600;
 
 //enemy layer
-const canvas4 = document.getElementById('canvas4');
+const canvas4: any = document.getElementById('canvas4');
 const ctx4 = canvas4.getContext('2d');
 canvas4.width = 800;
 canvas4.height = 600;
@@ -34,8 +34,8 @@ let score = 0;
 //movement speed for enemies
 let gameSpeed = 1;
 
-const enemiesArray = [];
-const foodArray = [];
+const enemiesArray: any = [];
+const foodArray: any = [];
 
 //sets gameRestart variable to false
 //when gameRestart variable is true, the gameStart function
