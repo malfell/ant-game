@@ -1,0 +1,62 @@
+// MIXINS
+
+// Mixin for pixelated game text
+// There's three slightly different variants for that text
+@mixin set-pix-text($align, $font-size){
+    text-align: $align;
+    font-size: $font-size;
+    font-family: $primary-font;
+    margin: 1em;
+    text-indent: 0;
+}
+
+// sets game window because they're mostly all the same except
+// for minor differences. I still haven't figured out why, but when the game windows
+// are the same size, they don't overlap correctly? 
+@mixin set-game-window(){
+    border: $border;
+    // except main-menu needs 48% manually
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+}
+
+// main button style is the same throughout 
+@mixin set_btn_style(){
+    border-radius: 20px;
+    width: 15em;
+    padding: 0.5em;
+    margin: auto;
+    font-family: $primary-font;
+    font-size: 2em;
+    /* Duration to change color on hover */
+    transition-duration: 0.7s; 
+}
+
+// ________________________________________________
+// FUNCTIONS
+// I know this is a dumb and useless function, but I haven't had enough time to
+// improve this game enough to maybe have decent functions in it. 
+
+// So I'm just trying to meet the requirements and show that I have 
+// an understanding of how functions work for SASS.
+
+// This function changes the border size and keeps the rest of the border
+// styling like "solid black"
+@function border-size($num){
+    // checks number for border width--should be greater than 0
+    @if $num <= 0 {
+        @error "Border width must be greater than 0" 
+    } @else {
+    $newBorder: $num + 0px solid black; 
+    @return $newBorder;
+    }
+    // makes a new border and adds the given number to 0px
+    // has to be 0px. Just adding to the number to 'px' does not work. 
+    // got a math operator in here too, yay
+}

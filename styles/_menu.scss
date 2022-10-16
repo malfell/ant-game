@@ -1,0 +1,46 @@
+/* Centers main menu window over the game window */
+#main-menu{
+    @include set-game-window();
+    top: 48%;
+    width: 761px;
+    height: 587px;
+    background-color: $primary-color;
+    @debug "The color is: #{$primary-color}";
+    .pixTextSmall{
+        @include set-pix-text(center, 1);
+    }
+
+}
+
+/* centers instructions and issues kinda*/
+#instructions, #issues {
+    @include set-game-window();
+    height: 585px;
+    background-color: $primary-color;
+    #issueList {
+        height: 400px;
+        overflow: auto;
+        margin: 1em;
+    }
+    /* Styling for known issues */
+    ul {
+        text-align: left;
+        font-family: $secondary-font;
+        margin: 1em;
+        list-style: none;
+    }
+
+    li {
+        border: border-size(1);
+        background-color: $quaternary-color;
+        padding: 1em;
+        &:nth-child(even) {
+            background-color: $quinary-color;
+        }
+    }
+
+    #smaller {
+        font-size: 1em;
+        text-decoration: line-through;
+    }
+}

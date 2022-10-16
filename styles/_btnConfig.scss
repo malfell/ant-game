@@ -1,0 +1,27 @@
+/* Button Styling */
+button {
+    @include set_btn_style();                                    
+}
+
+// the play again is technically hidden because it was having issues
+// when I first started this project, and I haven't fixed it yet
+#startButton, #playAgainButton {
+    margin-bottom: 0.5em;
+    &:hover{
+        background-color: $secondary-hoverBtn;
+    }
+}
+
+#infoButton {
+    margin-bottom: 0.5em;
+    &:hover {
+        background-color: $primary-hoverBtn;
+    }
+}
+
+.goBack, #issuesButton {
+    &:hover {
+        background-color: $primary-hoverBtn;
+    }
+}
+    

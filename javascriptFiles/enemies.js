@@ -14,8 +14,9 @@ class Enemy {
     }
     //draws enemy bases
     draw(){
-        ctx4.fillStyle = 'pink';
-        ctx4.fillRect(this.x, this.y, this.width, this.height);
+        // ctx4.fillStyle = 'pink';
+        // ctx4.fillRect(this.x, this.y, this.width, this.height);
+        ctx4.drawImage(spiderSprite, this.x, this.y, this.width, this.height);
         //enemy sprite isn't working
         // if(this.type === 'spider'){
         //     ctx4.drawImage(spiderSprite, this.x, this.y, this.width, this.height);

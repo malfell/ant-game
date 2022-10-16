@@ -55,6 +55,6 @@ foodSprite.src = 'assets/imgs/game-imgs/food-sprite.png'
 const anthillSprite = new Image()
 anthillSprite.src = 'assets/imgs/game-imgs/anthill-sprite.png'
 
-//sprite sprite
+//spider sprite
 const spiderSprite = new Image();
-spiderSprite = 'assets/game-imgs/spider-sprite.png'
+spiderSprite.src = 'assets/imgs/game-imgs/spider-sprite.png'
