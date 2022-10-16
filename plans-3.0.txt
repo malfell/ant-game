@@ -1,0 +1,10 @@
+---------------NEW STUFF------------
+[] Actually make a map like in the Pokemon game tutorial 
+    [] Make collision detection work like that game too 
+    [] And player sprite adjustment
+    [] Let anthill have top layer so ant can go behind it  
+[x] Spider sprites? MAYBE. If there's time. They don't have to be animated yet.
+[] Is there a better way to rework the window screens? 
+    Would a React app or something work better? 
+[] Make a changelog page?
+[] Frontend and Backend + Server stuff
