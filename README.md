@@ -62,3 +62,10 @@ Most of the unfinished functionality is in plans.txt
     * The user could have a row of ants walking together. When an enemy eats an ant, or the leading ant falls into dangerous terrain, then the leader dies, and the next ant must lead. So the ants are like "lives."
 * Two ant or ant groups at once?
     * Could allow for a second player to use the same keyboard or let the initial have an extra challenge. One ant group is controlled with WASD and the other ant group is controlled with the arrow keys. 
+
+### API DOCUMENTATION
+
+The untitled Ant Game only has one endpoint currently--the index page.
+https://malfell.github.io/ant-game/
+
+I'm still meaning to revamp this to include better endpoints so there will be less issues. Unfortunately, right now, there is not much in the way for API instructions that are not covered by the game instructions.

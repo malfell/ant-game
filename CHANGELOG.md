@@ -5,6 +5,9 @@
 * Changelog
 
 ### Changed
+* Added API Documentation to README.md (not really much for now though)
+
+### Changed
 * Updated README
 
 ## [0.1.6] 2022-10-15
